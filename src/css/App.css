@@ -1,0 +1,21 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  border: 2px solid green;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+}
+
+.form-standings {
+  display: flex;
+  justify-content: space-around;
+}
+
+.App {
+  text-align: center;
+}
