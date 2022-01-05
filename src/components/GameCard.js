@@ -3,7 +3,9 @@ import '../css/GameCard.css';
 
 const GameCard = () => {
   return(
-    <p>Winner: Nobody</p>
+    <section className="game-card">
+      <p>Winner: Nobody</p>
+    </section>
   )
 }
 

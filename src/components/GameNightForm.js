@@ -8,7 +8,7 @@ const GameNightForm = () => {
 
 
   return(
-    <form>
+    <form className="game-night-form">
       <input
         type="text"
         name="date"

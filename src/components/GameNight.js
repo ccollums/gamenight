@@ -5,9 +5,11 @@ import GamePlayForm from './GamePlayForm';
 
 const GameNight = () => {
   return(
-    <section>
-      <h2>1/5/22</h2>
-      <h2>Kyra's hotel</h2>
+    <section className="game-night">
+      <div className="date-location">
+        <p>1/5/22</p>
+        <p>Kyra's hotel</p>
+      </div>
       <GameResultsContainer />
       <GamePlayForm />
     </section>

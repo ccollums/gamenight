@@ -1,0 +1,4 @@
+.game-night {
+  display: flex;
+  justify-content: space-around;
+}

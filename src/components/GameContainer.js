@@ -4,7 +4,7 @@ import GameNight from './GameNight';
 
 const GameContainer = () => {
   return(
-    <section>
+    <section className="game-container">
       <GameNight />
     </section>
   )

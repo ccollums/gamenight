@@ -8,8 +8,10 @@ const App = () => {
   return (
     <div className="App">
       <Nav />
-      <GameNightForm />
-      <Standings />
+      <section className="form-standings">
+        <GameNightForm />
+        <Standings />
+      </section>
       <GameContainer />
     </div>
   );
