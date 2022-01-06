@@ -17,7 +17,7 @@ const GamePlayForm = () => {
         name="game"
         placeholder="Game"
         onChange={e => setGame(e.target.value)}>
-        <option hidden>Game</option>
+        <option hidden>Select Game</option>
         {generateGamesDropdown}
       </select>
       <select
