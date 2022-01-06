@@ -1,24 +1,31 @@
-import React, { useState } from 'react';
+import React, { useState, useContext } from 'react';
+import { GlobalContext } from '../context/GlobalContext';
 import '../css/GamePlayForm.css';
 
 const GamePlayForm = () => {
   const [game, setGame] = useState('');
   const [winner, setWinner] = useState('');
+  const games = useContext(GlobalContext)
+
+  const generateGamesDropdown = games.map((game) => {
+    return <option key={game.id}>{game.name}</option>
+  })
 
   return(
     <form className="game-play-form">
-      <input
-        type="text"
+      <select
         name="game"
         placeholder="Game"
-        value={game}
-        onChange={e => setGame(e.target.value)}/>
-      <input
-        type="text"
+        onChange={e => setGame(e.target.value)}>
+        <option hidden>Select Game</option>
+        {generateGamesDropdown}
+      </select>
+      <select
         name="winner"
         placeholder="Winner"
         value={winner}
-        onChange={e => setWinner(e.target.value)}/>
+        onChange={e => setWinner(e.target.value)}>
+      </select>
       <button>Add Game</button>
     </form>
   )
