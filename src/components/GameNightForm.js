@@ -14,11 +14,11 @@ const GameNightForm = () => {
       date, 
       location,
       players: players.split(','),
-      id: Date.now()
+      id: Date.now(),
+      gamesPlayed: []
     }
     addGameNight(newGameNight)
     clearInputs()
-    console.log(newGameNight)
   }
 
   const clearInputs = () => {

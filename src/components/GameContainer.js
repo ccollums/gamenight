@@ -14,11 +14,11 @@ const GameContainer = () => {
           date = {gamenight.date}
           location = {gamenight.location}
           players = {gamenight.players}
+          id={gamenight.id}
           key = {gamenight.id}
         />
       )
     })
-
 
   return(
     <section className="game-container">
