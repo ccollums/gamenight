@@ -4,7 +4,11 @@ const GlobalContext = createContext()
 
 const GlobalProvider = (props) => {
   const [games, setGames] = useState([])
-  const [gamenights, setGameNights] = useState([])
+  const [gamenights, setGameNights] = useState(() => {
+    const saved = localStorage.getItem("storedGameNights");
+    const existingGameNights = JSON.parse(saved);
+    return existingGameNights || []
+  })
 
   const fetchGames = async () => {
     try {
@@ -30,6 +34,16 @@ const GlobalProvider = (props) => {
   useEffect(() => {
     fetchGames()
   }, [])
+
+  useEffect(() => {
+    localStorage.setItem("storedGameNights", JSON.stringify(gamenights))
+  }, [gamenights])
+
+  // const setLocalStorage = () => {
+  //   const saved = gamenights && localStorage.getItem("storedGameNights");
+  //   const existingGameNights = JSON.parse(saved);
+  //   setGameNights(existingGameNights)
+  // }
 
   const addGameNight = (newGameNight) => {
     setGameNights([...gamenights, newGameNight])

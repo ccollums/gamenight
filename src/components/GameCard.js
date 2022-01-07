@@ -8,7 +8,8 @@ const GameCard = ({ gameName, winner }) => {
 
   return(
     <section className="game-card">
-      <img src={playedGame.img} alt={`${gameName} game box`} />
+      {/* <img src={playedGame.img} alt={`${gameName} game box`} /> */}
+      <p>Game: {gameName}</p>
       <p>Winner: {winner}</p>
     </section>
   )
