@@ -9,6 +9,7 @@ const GlobalProvider = (props) => {
     const existingGameNights = JSON.parse(saved);
     return existingGameNights || []
   })
+  const [winners, setWinners] = useState([])
 
   const fetchGames = async () => {
     try {
@@ -37,13 +38,9 @@ const GlobalProvider = (props) => {
 
   useEffect(() => {
     localStorage.setItem("storedGameNights", JSON.stringify(gamenights))
+    setWinners(calculateStandings)
   }, [gamenights])
 
-  // const setLocalStorage = () => {
-  //   const saved = gamenights && localStorage.getItem("storedGameNights");
-  //   const existingGameNights = JSON.parse(saved);
-  //   setGameNights(existingGameNights)
-  // }
 
   const addGameNight = (newGameNight) => {
     setGameNights([...gamenights, newGameNight])
@@ -56,8 +53,13 @@ const GlobalProvider = (props) => {
     setGameNights([...otherGameNights, currentGameNight])
   }
 
+  const calculateStandings = gamenights.map((gamenight) => {
+    return gamenight.gamesPlayed
+  }).flat().map((game => game.winner)).map(winner => winner.toLowerCase())
+
+
   return (
-      <GlobalContext.Provider value={{games, gamenights, addGameNight, addWinner}}>
+      <GlobalContext.Provider value={{games, gamenights, winners, addGameNight, addWinner}}>
         {props.children}
       </GlobalContext.Provider>
     )
