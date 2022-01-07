@@ -5,7 +5,6 @@ import { GlobalContext } from '../context/GlobalContext';
 
 const GameContainer = () => {
   const { gamenights } = useContext(GlobalContext)
-  console.log(gamenights, 'gamenights')
 
   const displayGameNights = 
     gamenights.map((gamenight) => {
@@ -14,11 +13,12 @@ const GameContainer = () => {
           date = {gamenight.date}
           location = {gamenight.location}
           players = {gamenight.players}
+          id={gamenight.id}
           key = {gamenight.id}
+          gamesPlayed={gamenight.gamesPlayed}
         />
       )
     })
-
 
   return(
     <section className="game-container">

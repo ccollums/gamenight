@@ -4,7 +4,7 @@ import GameResultsContainer from './GameResultsContainer';
 import GamePlayForm from './GamePlayForm';
 
 
-const GameNight = ({ date, location, players}) => {
+const GameNight = ({ date, location, players, id, gamesPlayed }) => {
 
   return(
     <section className="game-night">
@@ -12,8 +12,8 @@ const GameNight = ({ date, location, players}) => {
         <p>{date}</p>
         <p>{location}</p>
       </div>
-      <GameResultsContainer />
-      <GamePlayForm players={players}/>
+      <GameResultsContainer gamesPlayed={gamesPlayed} />
+      <GamePlayForm players={players} id={id}/>
     </section>
   )
 }

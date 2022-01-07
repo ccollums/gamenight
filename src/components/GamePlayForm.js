@@ -2,10 +2,10 @@ import React, { useState, useContext } from 'react';
 import { GlobalContext } from '../context/GlobalContext';
 import '../css/GamePlayForm.css';
 
-const GamePlayForm = ({ players }) => {
+const GamePlayForm = ({ players, id }) => {
   const [game, setGame] = useState('');
   const [winner, setWinner] = useState('');
-  const { games } = useContext(GlobalContext)
+  const { games, addWinner } = useContext(GlobalContext);
 
   const generateGamesDropdown = games.map((game) => {
     return <option key={game.id}>{game.name}</option>
@@ -15,11 +15,28 @@ const GamePlayForm = ({ players }) => {
     return <option key={players.indexOf(player)}>{player}</option>
   })
 
+  const submitWinner = e => {
+    e.preventDefault()
+    const gamePlayed = {
+      id,
+      game,
+      winner
+    }
+    addWinner(gamePlayed)
+    clearInputs();
+  }
+
+  const clearInputs = () => {
+    setGame('')
+    setWinner('')
+  }
+
   return(
     <form className="game-play-form">
       <select
         name="game"
         placeholder="Game"
+        value={game}
         onChange={e => setGame(e.target.value)}>
         <option hidden>Select Game</option>
         {generateGamesDropdown}
@@ -32,7 +49,7 @@ const GamePlayForm = ({ players }) => {
         <option hidden>Select Winner</option>
         {generatePlayersDropdown}
       </select>
-      <button>Add Game</button>
+      <button onClick={e => submitWinner(e)}>Add Game</button>
     </form>
   )
 }
