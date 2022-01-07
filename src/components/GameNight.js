@@ -3,12 +3,14 @@ import '../css/GameNight.css';
 import GameResultsContainer from './GameResultsContainer';
 import GamePlayForm from './GamePlayForm';
 
-const GameNight = () => {
+
+const GameNight = ({ date, location}) => {
+
   return(
     <section className="game-night">
       <div className="date-location">
-        <p>1/5/22</p>
-        <p>Kyra's hotel</p>
+        <p>{date}</p>
+        <p>{location}</p>
       </div>
       <GameResultsContainer />
       <GamePlayForm />

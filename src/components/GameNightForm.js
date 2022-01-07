@@ -13,7 +13,8 @@ const GameNightForm = () => {
     const newGameNight = {
       date, 
       location,
-      players: players.split(',')
+      players: players.split(','),
+      id: Date.now()
     }
     addGameNight(newGameNight)
     clearInputs()
