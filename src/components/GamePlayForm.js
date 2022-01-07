@@ -5,7 +5,7 @@ import '../css/GamePlayForm.css';
 const GamePlayForm = () => {
   const [game, setGame] = useState('');
   const [winner, setWinner] = useState('');
-  const games = useContext(GlobalContext)
+  const { games } = useContext(GlobalContext)
 
   const generateGamesDropdown = games.map((game) => {
     return <option key={game.id}>{game.name}</option>
