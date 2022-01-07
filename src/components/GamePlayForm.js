@@ -15,6 +15,8 @@ const GamePlayForm = ({ players, id }) => {
     return <option key={players.indexOf(player)}>{player}</option>
   })
 
+  
+
   const submitWinner = e => {
     e.preventDefault()
     const gamePlayed = {

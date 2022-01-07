@@ -4,7 +4,7 @@ import GameCard from './GameCard'
 
 const GameResultsContainer = ({ gamesPlayed }) => {
   const displayGamesPlayed = gamesPlayed.map(game => {
-    return <GameCard gameName={game.game} winner={game.winner} />
+    return <GameCard gameName={game.game} winner={game.winner}/>
   })
 
   return(

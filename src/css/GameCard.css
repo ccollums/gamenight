@@ -1,3 +1,7 @@
 .game-card {
   border: 1px solid purple;
 }
+
+img {
+  height: 10vh;
+}

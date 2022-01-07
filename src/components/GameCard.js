@@ -6,9 +6,11 @@ const GameCard = ({ gameName, winner }) => {
   const { games } = useContext(GlobalContext)
   const playedGame = games.find(game => game.name === gameName)
 
+
   return(
     <section className="game-card">
-      <img src={playedGame.img} alt={`${gameName} game box`} />
+      {playedGame && <img src={playedGame.img} alt={`${gameName} game box`} />}
+      <p>Game: {gameName}</p>
       <p>Winner: {winner}</p>
     </section>
   )
