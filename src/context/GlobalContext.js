@@ -35,13 +35,19 @@ const GlobalProvider = (props) => {
     setGameNights([...gamenights, newGameNight])
   }
 
+  const addWinner = (newWinner) => {
+    const currentGameNight = gamenights.find(gamenight => gamenight.id === newWinner.id)
+    const otherGameNights = gamenights.filter(gamenight => gamenight.id !== newWinner.id)
+    currentGameNight.gamesPlayed.push(newWinner)
+    setGameNights([...otherGameNights, currentGameNight])
+  }
+
   return (
-      <GlobalContext.Provider value={{games, gamenights, addGameNight}}>
+      <GlobalContext.Provider value={{games, gamenights, addGameNight, addWinner}}>
         {props.children}
       </GlobalContext.Provider>
     )
 }
-
 
 export {GlobalContext, GlobalProvider}
 

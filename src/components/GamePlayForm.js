@@ -5,7 +5,7 @@ import '../css/GamePlayForm.css';
 const GamePlayForm = ({ players, id }) => {
   const [game, setGame] = useState('');
   const [winner, setWinner] = useState('');
-  const { games, gamenights } = useContext(GlobalContext);
+  const { games, addWinner } = useContext(GlobalContext);
 
   const generateGamesDropdown = games.map((game) => {
     return <option key={game.id}>{game.name}</option>
@@ -17,11 +17,12 @@ const GamePlayForm = ({ players, id }) => {
 
   const submitWinner = e => {
     e.preventDefault()
-    const currentGameNight = gamenights.find(gamenight => gamenight.id === id)
-    currentGameNight.gamesPlayed.push({
+    const gamePlayed = {
+      id,
       game,
       winner
-    })
+    }
+    addWinner(gamePlayed)
     clearInputs();
   }
 

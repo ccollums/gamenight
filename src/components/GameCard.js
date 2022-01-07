@@ -1,10 +1,11 @@
 import React from 'react';
 import '../css/GameCard.css';
 
-const GameCard = () => {
+const GameCard = ({ game, winner }) => {
   return(
     <section className="game-card">
-      <p>Winner: Nobody</p>
+      <p>Game: {game}</p>
+      <p>Winner: {winner}</p>
     </section>
   )
 }

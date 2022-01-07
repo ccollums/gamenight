@@ -5,7 +5,6 @@ import { GlobalContext } from '../context/GlobalContext';
 
 const GameContainer = () => {
   const { gamenights } = useContext(GlobalContext)
-  console.log(gamenights, 'gamenights')
 
   const displayGameNights = 
     gamenights.map((gamenight) => {
@@ -16,6 +15,7 @@ const GameContainer = () => {
           players = {gamenight.players}
           id={gamenight.id}
           key = {gamenight.id}
+          gamesPlayed={gamenight.gamesPlayed}
         />
       )
     })
