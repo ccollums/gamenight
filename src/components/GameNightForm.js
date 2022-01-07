@@ -1,11 +1,31 @@
-import React, { useState } from 'react';
+import React, { useState, useContext } from 'react';
+import { GlobalContext } from '../context/GlobalContext';
 import '../css/GameNightForm.css';
 
 const GameNightForm = () => {
   const [date, setDate] = useState('');
   const [location, setLocation] = useState('');
   const [players, setPlayers] = useState([]);
+  const { addGameNight } = useContext(GlobalContext)
 
+  const submitGameNight = (e) => {
+    e.preventDefault();
+    const newGameNight = {
+      date, 
+      location,
+      players: players.split(','),
+      id: Date.now()
+    }
+    addGameNight(newGameNight)
+    clearInputs()
+    console.log(newGameNight)
+  }
+
+  const clearInputs = () => {
+    setDate('')
+    setLocation('')
+    setPlayers('')
+  }
 
   return(
     <form className="game-night-form">
@@ -27,7 +47,7 @@ const GameNightForm = () => {
         placeholder="Players (separated by comma)"
         value={players}
         onChange={e => setPlayers(e.target.value)}/>
-      <button>Start Game Night!</button>
+      <button onClick={e => submitGameNight(e)}>Start Game Night!</button>
     </form>
   )
 }

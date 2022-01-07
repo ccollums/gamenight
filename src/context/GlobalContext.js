@@ -4,6 +4,7 @@ const GlobalContext = createContext()
 
 const GlobalProvider = (props) => {
   const [games, setGames] = useState([])
+  const [gamenights, setGameNights] = useState([])
 
   const fetchGames = async () => {
     try {
@@ -30,8 +31,12 @@ const GlobalProvider = (props) => {
     fetchGames()
   }, [])
 
+  const addGameNight = (newGameNight) => {
+    setGameNights([...gamenights, newGameNight])
+  }
+
   return (
-      <GlobalContext.Provider value={games}>
+      <GlobalContext.Provider value={{games, gamenights, addGameNight}}>
         {props.children}
       </GlobalContext.Provider>
     )
