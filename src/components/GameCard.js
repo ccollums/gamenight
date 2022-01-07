@@ -6,7 +6,6 @@ const GameCard = ({ gameName, winner }) => {
   const { games } = useContext(GlobalContext)
   const playedGame = games.find(game => game.name === gameName)
 
-
   return(
     <section className="game-card">
       {playedGame && <img src={playedGame.img} alt={`${gameName} game box`} />}
