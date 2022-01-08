@@ -28,7 +28,8 @@
 }
 
 .name, 
-.summary {
+.summary, 
+.personal-pages {
 	margin: .7em;
 }
 
@@ -39,3 +40,13 @@
 .playing-game-img {
 	height: 40vh;
 }
+
+.personal-pages {
+	display: flex;
+}
+
+.linkedin,
+.github {
+	margin: 0 .5em 0 .7em;
+}
+

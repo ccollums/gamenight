@@ -4,6 +4,7 @@ import Adam from '../images/Adam.png'
 import Carly from '../images/Carly.png'
 import Kyra from '../images/Kyra.png'
 import playingGame from '../images/playingGame.svg'
+import { AiFillLinkedin, AiFillGithub } from 'react-icons/ai';
 
 const About = () => {
 
@@ -20,6 +21,14 @@ const About = () => {
 							and provide for an overall positive user experience. What excites me the most about software development 
 							is the unlimited possibilities. Nearly all of our daily tasks involve some sort of interaction with code. 
 							Being able to be a part of that user interaction now and in the future is very inspiring to me.</p>
+						<div className='personal-pages'>
+							<div className='linkedin'>
+								<AiFillLinkedin size={34}/>
+							</div>
+							<div className='github'>
+							<AiFillGithub size={34}/>
+							</div>
+						</div>
 					</div>
 				</div>
 				<div className='Carly'>
@@ -31,6 +40,14 @@ const About = () => {
 						working for an IT recruiting company and was exposed to the vast world of tech in a way that I had not been before. 
 						This opened my eyes to the world of software development and I was immediately smitten. I am drawn to problem solving, 
 						continuous learning, and the creativity that software development offers.</p>
+						<div className='personal-pages'>
+							<div className='linkedin'>
+								<AiFillLinkedin size={34}/>
+							</div>
+							<div className='github'>
+							<AiFillGithub size={34}/>
+							</div>
+						</div>
 					</div>
 				</div>
 				<div className='Kyra'>
@@ -46,6 +63,14 @@ const About = () => {
 							communication to every team. As an outdoor enthusiast, I am excited by the potential for software products to bring people together 
 							and to increase access to outdoor education, recreation, and sustainable living. I believe it is an avenue that will in turn inspire 
 							people to care more for each other and the world we live in.</p>
+						<div className='personal-pages'>
+							<div className='linkedin'>
+								<AiFillLinkedin size={34}/>
+							</div>
+							<div className='github'>
+							<AiFillGithub size={34}/>
+							</div>
+						</div>
 					</div>
 				</div>
 			</section>
