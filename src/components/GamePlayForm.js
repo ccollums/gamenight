@@ -12,7 +12,7 @@ const GamePlayForm = ({ players, id }) => {
   })
 
   const generatePlayersDropdown = players.map((player) => {
-    return <option key={players.indexOf(player)}>{player}</option>
+    return <option value={player}key={players.indexOf(player)}>{player}</option>
   })
 
   
