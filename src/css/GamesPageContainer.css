@@ -1,0 +1,8 @@
+.game-page-container {
+  padding: 35px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, auto));
+  grid-gap: 1%;
+  /* overflow: scroll; */
+  /* height: 80vh; */
+  }
