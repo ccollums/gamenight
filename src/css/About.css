@@ -51,3 +51,8 @@
 	color: black;
 }
 
+.linkedin:hover,
+.github:hover {
+	color: #F65C00;
+}
+
