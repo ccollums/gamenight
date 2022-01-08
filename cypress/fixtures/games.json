@@ -1,0 +1,44 @@
+{
+  "games": [
+    {
+      "id": "TAAifFP590",
+      "name": "Root",
+      "price": "47.99",
+      "min_players": 2,
+      "max_players": 4,
+      "thumb_url": "https://s3-us-west-1.amazonaws.com/5cc.images/games/uploaded/1629324760985.jpg"
+    },
+    {
+      "id": "yqR4PtpO8X",
+      "name": "Scythe",
+      "price": "54.92",
+      "min_players": 1,
+      "max_players": 5,
+      "thumb_url": "https://cdn.shopify.com/s/files/1/0513/4077/1515/products/scythe-board-game.jpg?v=1611090922"
+    },
+    {
+      "id": "5H5JS0KLzK",
+      "name": "Wingspan",
+      "price": "47.99",
+      "min_players": 1,
+      "max_players": 5,
+      "thumb_url": "https://s3-us-west-1.amazonaws.com/5cc.images/games/uploaded/1629325193747.png"
+    },
+    {
+      "id": "RLlDWHh7hR",
+      "name": "Gloomhaven",
+      "price": "111.47",
+      "min_players": 1,
+      "max_players": 4,
+      "thumb_url": "https://s3-us-west-1.amazonaws.com/5cc.images/games/uploaded/1559254920151-51ulRXlJ7LL.jpg"
+    },
+    {
+      "id": "fDn9rQjH9O",
+      "name": "Terraforming Mars",
+      "price": "51.99",
+      "min_players": 1,
+      "max_players": 5,
+      "thumb_url": "https://cdn.shopify.com/s/files/1/0513/4077/1515/products/terraforming-mars-board-game.jpg?v=1611091381"
+    }
+  ]
+}
