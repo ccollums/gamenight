@@ -22,12 +22,12 @@ const About = () => {
 							is the unlimited possibilities. Nearly all of our daily tasks involve some sort of interaction with code. 
 							Being able to be a part of that user interaction now and in the future is very inspiring to me.</p>
 						<div className='personal-pages'>
-							<div className='linkedin'>
+							<a href='https://www.linkedin.com/in/burgess-adam/' className='linkedin'>
 								<AiFillLinkedin size={34}/>
-							</div>
-							<div className='github'>
+							</a>
+							<a href='https://github.com/aburg15' className='github'>
 							<AiFillGithub size={34}/>
-							</div>
+							</a>
 						</div>
 					</div>
 				</div>
@@ -41,12 +41,12 @@ const About = () => {
 						This opened my eyes to the world of software development and I was immediately smitten. I am drawn to problem solving, 
 						continuous learning, and the creativity that software development offers.</p>
 						<div className='personal-pages'>
-							<div className='linkedin'>
+							<a href='https://www.linkedin.com/in/carly-collums/' className='linkedin'>
 								<AiFillLinkedin size={34}/>
-							</div>
-							<div className='github'>
+							</a>
+							<a href='https://github.com/ccollums' className='github'>
 							<AiFillGithub size={34}/>
-							</div>
+							</a>
 						</div>
 					</div>
 				</div>
@@ -64,12 +64,12 @@ const About = () => {
 							and to increase access to outdoor education, recreation, and sustainable living. I believe it is an avenue that will in turn inspire 
 							people to care more for each other and the world we live in.</p>
 						<div className='personal-pages'>
-							<div className='linkedin'>
+							<a href='https://www.linkedin.com/in/kyrabergsund/' className='linkedin'>
 								<AiFillLinkedin size={34}/>
-							</div>
-							<div className='github'>
+							</a>
+							<a href='https://github.com/kbergsund' className='github'>
 							<AiFillGithub size={34}/>
-							</div>
+							</a>
 						</div>
 					</div>
 				</div>
