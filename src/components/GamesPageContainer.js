@@ -18,6 +18,7 @@ const GamesPageContainer = () => {
 				price={game.price}
 				minPlayers={game.min_players}
 				maxPlayers={game.max_players}
+				url={game.url}
       />
     )
   })

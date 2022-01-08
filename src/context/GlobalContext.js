@@ -22,7 +22,8 @@ const GlobalProvider = (props) => {
           price: game.price, 
           min_players: game.min_players, 
           max_players: game.max_players,
-          img: game.thumb_url
+          img: game.thumb_url,
+          url: game.url
         }
       }).sort((a, b) => {
         return a.name.localeCompare(b.name)
