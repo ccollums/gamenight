@@ -47,7 +47,7 @@ describe('main page',() => {
       .get('select').eq(1).select('Carl').should('have.value', ' Carl')
   })
 
-  it.only('When a user selects a game and a game winner, a game card displaying the game image and winner is rendered', () => {
+  it('When a user selects a game and a game winner, a game card displaying the game image and winner is rendered', () => {
     cy.get("button").click();
 
     cy.get('.game-container')
@@ -59,7 +59,7 @@ describe('main page',() => {
       .get('.game-card').contains('Kyra')
   })
 
-  it.only('The standings should reflect the game winner', () => {
+  it('The standings should reflect the game winner', () => {
     cy.get("button").click();
 
     cy.get('.game-container')
@@ -67,8 +67,7 @@ describe('main page',() => {
       .get('select').eq(0).select('Gloomhaven')
       .get('select').eq(1).select('Kyra')
       .get('.game-play-form').find("button").click()
-      .get('.game-card').find('img').should('have.attr', 'alt').should('include', 'Gloomhaven')
-      .get('.game-card').contains('Kyra')
+      .get('.standings').contains('kyra')
   })
 
 })
