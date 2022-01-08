@@ -1,12 +1,42 @@
 header {
-  border: 2px solid blue;
+  background-color: #F65C00;
+  color: white;
   width: 100vw;
-  height: 15vh;
+  height: 18vh;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
+  align-items: flex-end;
+  padding: 1em;
+}
+
+.title-tagline {
+  display: flex;
+  flex-direction: column;
+  margin: 0 1em 0 1em;
 }
 
 nav {
-  border: 2px solid orange;
   display: flex;
 }
+
+.dice {
+  height: 15vh;
+  margin-top: .5em;
+}
+
+.links {
+  color: white;
+  text-decoration: none;
+  list-style-type: none;
+  margin: 0 3em;
+}
+
+.left-section {
+  display: flex;
+  align-items: center;
+}
+
+.appTitle {
+  font-size: 5vh;
+}
+

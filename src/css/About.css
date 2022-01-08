@@ -1,0 +1,58 @@
+.headshot {
+	height: 30vh;
+	border-radius: 1em;
+	margin: 1em;
+}
+
+.about-page {
+	background-color: #F9F8F6;
+	display: flex;
+	justify-content: space-around;
+}
+
+.Adam, 
+.Carly, 
+.Kyra {
+	display: flex;
+	align-items: center;
+	width: 60vw;
+	border-radius: 1em;
+	margin: 1em;
+}
+
+.summary-section {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	text-align: left;
+}
+
+.name, 
+.summary, 
+.personal-pages {
+	margin: .7em;
+}
+
+.collaberators {
+	background-color: white;
+}
+
+.playing-game-img {
+	height: 40vh;
+}
+
+.personal-pages {
+	display: flex;
+}
+
+.linkedin,
+.github {
+	margin: 0 .5em 0 .7em;
+	color: black;
+}
+
+.linkedin:hover,
+.github:hover {
+	color: #F65C00;
+}
+

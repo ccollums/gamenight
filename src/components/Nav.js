@@ -1,16 +1,25 @@
 import React from 'react';
 import '../css/Nav.css';
 import { Link } from 'react-router-dom'
+import dice from '../images/dice.svg'
 
 const Nav = () => {
   return (
     <header>
-      <h1>Gamenight!</h1>
-      <nav>
-        <Link to={'/'}><li>Home</li></Link>
-        <Link to={'/about'}><li>About</li></Link>
-        <Link to={'/games'}><li>Games</li></Link>
-      </nav>
+      <div className='left-section'>
+        <img className='dice' src={dice} alt='logo of single dice'/>
+        <div className='title-tagline'>
+          <h1 className='appTitle'>gamenight</h1>
+          <p>Where friends come to play...</p>
+       </div>
+      </div>
+      <div className='right-section'>
+        <nav>
+         <Link to={'/'} style={{ textDecoration: 'none' }}><li className='links'>Home</li></Link>
+         <Link to={'/about'} style={{ textDecoration: 'none' }}><li className='links'>About</li></Link>
+         <Link to={'/games'} style={{ textDecoration: 'none' }}><li className='links'>Games</li></Link>
+        </nav>
+      </div>
     </header>
   )
 }
