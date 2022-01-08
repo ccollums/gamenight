@@ -16,8 +16,8 @@ const Nav = () => {
       <div className='right-section'>
         <nav>
          <Link to={'/'} style={{ textDecoration: 'none' }}><li className='links'>Home</li></Link>
-         <Link to={'/about'} style={{ textDecoration: 'none' }}><li className='links'>About</li></Link>
          <Link to={'/games'} style={{ textDecoration: 'none' }}><li className='links'>Games</li></Link>
+         <Link to={'/about'} style={{ textDecoration: 'none' }}><li className='links'>About</li></Link>
         </nav>
       </div>
     </header>
