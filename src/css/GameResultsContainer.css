@@ -1,4 +1,6 @@
 .game-results-container {
-  border: 2px solid purple;
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(100px, auto));
+  min-width: 45%;
+  grid-gap: .2em;
 }
