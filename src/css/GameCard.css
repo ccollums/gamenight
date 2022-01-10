@@ -1,7 +1,13 @@
 .game-card {
-  border: 1px solid purple;
+  text-align: center;
+  font-weight: 700;
 }
 
 img {
-  height: 10vh;
+  height: 8vh;
+}
+
+.game-card-winner {
+  font-weight: 300;
+  font-size: .9em;
 }

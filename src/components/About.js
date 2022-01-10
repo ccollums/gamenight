@@ -10,7 +10,7 @@ const About = () => {
 
 	return (
 		<section className='about-page'>
-			<section className='collaberators'>
+			<section className='collaborators'>
 				<div className='Adam'>
 					<img className='headshot' src={Adam} alt='headshot of Adam Burgess'/>
 					<div className='summary-section'>
@@ -54,15 +54,7 @@ const About = () => {
 					<img className='headshot' src={Kyra} alt='headshot of Kyra Bergsund'/>
 					<div className='summary-section'>
 						<h2 className='name'>Kyra Bergsund</h2>
-						<p className='summary'>I am a detail-oriented software engineer with a proven track record of end-to-end project management experience in the 
-							entertainment industry. I started my career in event production because I am passionate about facilitating meaningful experiences 
-							for broad audiences. I love being part of a team that fabricates joy. Now, as a software engineer, I continue that work by actively 
-							contributing to the creation of impactful products. I’m focused on the intersections of impactful, immersive tech, human connection, 
-							and sustainability. Specializing in front-end engineering with experience in JavaScript, HTML, and CSS/Sass, I bring my eagerness to 
-							never stop learning, my enjoyment of solving problems in innovative ways, and my strengths in methodical organization and proactive 
-							communication to every team. As an outdoor enthusiast, I am excited by the potential for software products to bring people together 
-							and to increase access to outdoor education, recreation, and sustainable living. I believe it is an avenue that will in turn inspire 
-							people to care more for each other and the world we live in.</p>
+						<p className='summary'>I am a detail-oriented software engineer with a proven track record of end-to-end project management experience in the entertainment industry. I started my career in event production because I am passionate about facilitating meaningful experiences for broad audiences. I love being part of a team that fabricates joy. Now, as a software engineer, I continue that work by actively contributing to the creation of impactful products. I’m focused on the intersections of impactful immersive tech, human connection, and sustainability. Specializing in front-end engineering with experience in React, JavaScript, HTML, and CSS/Sass, I bring my eagerness to never stop learning, my enjoyment of solving problems in innovative ways, and my strengths in methodical organization and proactive communication to every team. As an outdoor enthusiast, I am excited by the potential for software products to bring people together and to increase access to outdoor education, recreation, and sustainable living. I believe it is an avenue that will in turn inspire people to care more for each other and the world we live in.</p>
 						<div className='personal-pages'>
 							<a href='https://www.linkedin.com/in/kyrabergsund/' className='linkedin'>
 								<AiFillLinkedin size={34}/>

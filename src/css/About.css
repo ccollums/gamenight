@@ -33,12 +33,13 @@
 	margin: .7em;
 }
 
-.collaberators {
+.collaborators {
 	background-color: white;
 }
 
 .playing-game-img {
-	height: 40vh;
+	min-height: 40vh;
+	margin-top: 2em;
 }
 
 .personal-pages {

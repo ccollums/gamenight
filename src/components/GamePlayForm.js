@@ -40,7 +40,7 @@ const GamePlayForm = ({ players, id }) => {
         placeholder="Game"
         value={game}
         onChange={e => setGame(e.target.value)}>
-        <option hidden>Select Game</option>
+        <option hidden>Game</option>
         {generateGamesDropdown}
       </select>
       <select
@@ -48,10 +48,10 @@ const GamePlayForm = ({ players, id }) => {
         placeholder="Winner"
         value={winner}
         onChange={e => setWinner(e.target.value)}>
-        <option hidden>Select Winner</option>
+        <option hidden>Winner</option>
         {generatePlayersDropdown}
       </select>
-      <button onClick={e => submitWinner(e)}>Add Game</button>
+      <button className="add-game-btn" onClick={e => submitWinner(e)}>Add Game</button>
     </form>
   )
 }
