@@ -28,6 +28,7 @@ const GamePlayForm = ({ players, id }) => {
       }
       addWinner(gamePlayed)
       clearInputs();
+      setError(false)
     }
   }
 

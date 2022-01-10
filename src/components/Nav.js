@@ -6,6 +6,20 @@ import dice from '../images/dice.svg'
 const Nav = () => {
   const [isActive, setActive] = useState(false);
 
+  const styling = <style jsx>{`
+  .bar1 {
+    transform: ${ isActive ? 'translateY(17px) rotate(45deg)' : 'rotate(0)'};
+  }
+  .bar2 {
+    transform: ${ isActive ? 'translateX(100%)' : 'translateX(0)'};
+    opacity: ${isActive ? 0 : 1};
+  }
+  .bar3 {
+    transform: ${ isActive ? 'translateY(-17px) rotate(-45deg)' : 'rotate(0)'};
+  }
+  `}
+  </style>
+
   return (
     <header>
       <div className='logo-title'>
@@ -33,22 +47,8 @@ const Nav = () => {
            <span className='bar bar3'></span>
          </div>
         </nav>
-      <style jsx>{`
-
-      .bar1 {
-        transform: ${ isActive ? 'translateY(17px) rotate(45deg)' : 'rotate(0)'};
-      }
-      .bar2 {
-        transform: ${ isActive ? 'translateX(100%)' : 'translateX(0)'};
-        opacity: ${isActive ? 0 : 1};
-      }
-      .bar3 {
-        transform: ${ isActive ? 'translateY(-17px) rotate(-45deg)' : 'rotate(0)'};
-      }
-      `}
-      </style>
+      {styling}
     </header>
-
   )
 }
 

@@ -23,6 +23,7 @@ const GameNightForm = () => {
       }
       addGameNight(newGameNight)
       clearInputs()
+      setError(false)
     }
   }
 
