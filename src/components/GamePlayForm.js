@@ -5,6 +5,7 @@ import '../css/GamePlayForm.css';
 const GamePlayForm = ({ players, id }) => {
   const [game, setGame] = useState('');
   const [winner, setWinner] = useState('');
+  const [error, setError] = useState(false)
   const { games, addWinner } = useContext(GlobalContext);
 
   const generateGamesDropdown = games.map((game) => {
@@ -19,13 +20,17 @@ const GamePlayForm = ({ players, id }) => {
 
   const submitWinner = e => {
     e.preventDefault()
-    const gamePlayed = {
-      id,
-      game,
-      winner
+    if (!game || !winner) {
+      setError(true)
+    } else {
+      const gamePlayed = {
+        id,
+        game,
+        winner
+      }
+      addWinner(gamePlayed)
+      clearInputs();
     }
-    addWinner(gamePlayed)
-    clearInputs();
   }
 
   const clearInputs = () => {
@@ -52,6 +57,7 @@ const GamePlayForm = ({ players, id }) => {
         {generatePlayersDropdown}
       </select>
       <button className="add-game-btn" onClick={e => submitWinner(e)}>Add Game</button>
+      {error && <p>Please select an option from all fields!</p>}
     </form>
   )
 }

@@ -11,7 +11,7 @@ const GameNightForm = () => {
 
   const submitGameNight = (e) => {
     e.preventDefault();
-    if (date === '' || location === '' || players === '') {
+      if (!date || !location || !players.length) {
       setError(true)
     } else {
       const newGameNight = {
