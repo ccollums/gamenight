@@ -57,3 +57,24 @@
 	color: #F65C00;
 }
 
+@media screen and (max-width: 888px) {
+	.about-page {
+		display: flex;
+		flex-direction: column;
+	}
+
+	.Adam, 
+	.Carly, 
+	.Kyra {
+		width: 90vw;
+	}
+}
+
+@media screen and (max-width: 820px) {
+	.Adam, 
+	.Carly, 
+	.Kyra {
+		display: flex;
+		flex-direction: column;
+	}
+}
