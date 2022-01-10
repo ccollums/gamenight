@@ -33,7 +33,6 @@ const Nav = () => {
            <span className='bar bar3'></span>
          </div>
         </nav>
-      </div>
       <style jsx>{`
 
       .bar1 {
