@@ -8,8 +8,12 @@ const GameContainer = () => {
 
   console.log(gameNights)
 
+  const sortedGameNights = gameNights.sort((a, b) => {
+      return new Date(b.date) - new Date(a.date)
+    })
+
   const displayGameNights = !gameNights.length ? <p>No game nights to display yet! Start one above!</p> :
-    gameNights.map((gameNight) => {
+    sortedGameNights.map((gameNight) => {
       return (
         <GameNight 
           date = {gameNight.date}
