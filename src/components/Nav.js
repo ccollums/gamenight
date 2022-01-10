@@ -30,7 +30,7 @@ const Nav = () => {
         </div>
       </div>
         <nav>
-        <ul className={!isActive ? 'nav-menu': undefined}>
+        <ul className={!isActive ? 'nav-menu': null}>
           <div className='nav-item'>
             <Link to={'/'} style={{ textDecoration: 'none' }}><li className='links'>Home</li></Link>
           </div>
@@ -41,7 +41,7 @@ const Nav = () => {
             <Link to={'/about'} style={{ textDecoration: 'none' }}><li className='links'>About</li></Link>
            </div>
          </ul>
-         <div className={!isActive ? 'hamburger': undefined} onClick={() => setActive(!isActive)}>
+         <div className={!isActive ? 'hamburger': null} onClick={() => setActive(!isActive)}>
            <span className='bar bar1'></span>
            <span className='bar bar2'></span>
            <span className='bar bar3'></span>
