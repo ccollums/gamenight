@@ -58,9 +58,12 @@ const GameProvider = (props) => {
     return gamenight.gamesPlayed
   }).flat().map((game => game.winner)).map(winner => winner.toLowerCase())
 
+  const clearGameNights = () => {
+    setGameNights([])
+  }
 
   return (
-      <GameContext.Provider value={{games, gameNights, winners, addGameNight, addWinner}}>
+      <GameContext.Provider value={{games, gameNights, winners, addGameNight, addWinner, clearGameNights}}>
         {props.children}
       </GameContext.Provider>
     )
