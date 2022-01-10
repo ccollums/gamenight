@@ -6,7 +6,7 @@ import { GlobalContext } from '../context/GlobalContext';
 const GameContainer = () => {
   const { gamenights } = useContext(GlobalContext)
 
-  const displayGameNights = 
+  const displayGameNights = !gamenights.length ? <p>No gamenights to display yet!  Start one above!</p> :
     gamenights.map((gamenight) => {
       return (
         <GameNight 
