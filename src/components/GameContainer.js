@@ -6,8 +6,6 @@ import { GameContext } from '../context/GameContext';
 const GameContainer = () => {
   const { gameNights, clearGameNights } = useContext(GameContext)
 
-  console.log(gameNights)
-
   const sortedGameNights = gameNights.sort((a, b) => {
       return new Date(b.date) - new Date(a.date)
     })

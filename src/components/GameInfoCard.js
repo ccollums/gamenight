@@ -3,6 +3,8 @@ import '../css/GameInfoCard.css';
 
 const GameInfoCard = ({ name, price, image, url, minPlayers, maxPlayers}) => {
 
+	const validateNumberOfPlayers = minPlayers === maxPlayers ? <p>{minPlayers} players</p> : <p>{minPlayers}-{maxPlayers} players</p>
+
 	return (
 		<section className='game-page-card'>
 			<div className='button-container'>
@@ -12,7 +14,7 @@ const GameInfoCard = ({ name, price, image, url, minPlayers, maxPlayers}) => {
 			<div className='game-details'>
 				<p className='game-name'>{name}</p>
 				<h3 className='game-price'>${price}</h3>
-				<p className='game-player-count'>{minPlayers}-{maxPlayers} players</p>
+				{validateNumberOfPlayers}
 			</div>
 		</section>
 	)
