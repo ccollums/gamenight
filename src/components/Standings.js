@@ -1,9 +1,9 @@
 import React, { useContext } from 'react';
 import '../css/Standings.css';
-import { GlobalContext } from '../context/GlobalContext';
+import { GameContext } from '../context/GameContext';
 
 const Standings = () => {
-  const { winners } = useContext(GlobalContext)
+  const { winners } = useContext(GameContext)
 
   const generateStandings = 
     winners.reduce((obj, person) => {

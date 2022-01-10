@@ -6,12 +6,12 @@ import Nav from './Nav';
 import GameContainer from './GameContainer';
 import Games from './Games'
 import About from './About'
-import { GlobalProvider } from '../context/GlobalContext';
+import { GameProvider } from '../context/GameContext';
 import React from 'react';
 
 const App = () => {
   return (
-    <GlobalProvider>
+    <GameProvider>
       <div className="App">
         <Nav />
           <Routes>
@@ -27,7 +27,7 @@ const App = () => {
             <Route path="/games" element={<Games />}/>
           </Routes>
         </div>
-    </GlobalProvider>
+    </GameProvider>
   );
 }
 

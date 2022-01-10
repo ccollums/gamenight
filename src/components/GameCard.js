@@ -1,9 +1,9 @@
 import React, { useContext } from 'react';
-import { GlobalContext } from '../context/GlobalContext';
+import { GameContext } from '../context/GameContext';
 import '../css/GameCard.css';
 
 const GameCard = ({ gameName, winner }) => {
-  const { games } = useContext(GlobalContext)
+  const { games } = useContext(GameContext)
   const playedGame = games.find(game => game.name === gameName)
 
   return(

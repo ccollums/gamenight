@@ -1,5 +1,5 @@
 import React, { useState, useContext } from 'react';
-import { GlobalContext } from '../context/GlobalContext';
+import { GameContext } from '../context/GameContext';
 import '../css/GameNightForm.css';
 
 const GameNightForm = () => {
@@ -7,7 +7,7 @@ const GameNightForm = () => {
   const [location, setLocation] = useState('');
   const [players, setPlayers] = useState([]);
   const [error, setError] = useState(false);
-  const { addGameNight } = useContext(GlobalContext)
+  const { addGameNight } = useContext(GameContext)
 
   const submitGameNight = (e) => {
     e.preventDefault();
