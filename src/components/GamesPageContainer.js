@@ -1,10 +1,10 @@
 import React, { useContext } from 'react';
 import '../css/GamesPageContainer.css';
 import GameInfoCard from './GameInfoCard'
-import { GlobalContext } from '../context/GlobalContext';
+import { GameContext } from '../context/GameContext';
 
 const GamesPageContainer = () => {
-	const { games } = useContext(GlobalContext)
+	const { games } = useContext(GameContext)
 
 	console.log(games)
 

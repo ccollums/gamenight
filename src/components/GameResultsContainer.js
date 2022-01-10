@@ -9,7 +9,7 @@ const GameResultsContainer = ({ gamesPlayed }) => {
 
   return(
     <section className="game-results-container">
-      {displayGamesPlayed}
+      {!gamesPlayed.length ? <p>Choose a game and tell us who won!</p> : displayGamesPlayed}
     </section>
   )
 }

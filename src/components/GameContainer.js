@@ -1,21 +1,21 @@
 import React, { useContext } from 'react';
 import '../css/GameContainer.css';
 import GameNight from './GameNight';
-import { GlobalContext } from '../context/GlobalContext';
+import { GameContext } from '../context/GameContext';
 
 const GameContainer = () => {
-  const { gamenights } = useContext(GlobalContext)
+  const { gameNights } = useContext(GameContext)
 
-  const displayGameNights = 
-    gamenights.map((gamenight) => {
+  const displayGameNights = !gameNights.length ? <p>No game nights to display yet!  Start one above!</p> :
+    gameNights.map((gameNight) => {
       return (
         <GameNight 
-          date = {gamenight.date}
-          location = {gamenight.location}
-          players = {gamenight.players}
-          id={gamenight.id}
-          key = {gamenight.id}
-          gamesPlayed={gamenight.gamesPlayed}
+          date = {gameNight.date}
+          location = {gameNight.location}
+          players = {gameNight.players}
+          id={gameNight.id}
+          key = {gameNight.id}
+          gamesPlayed={gameNight.gamesPlayed}
         />
       )
     })

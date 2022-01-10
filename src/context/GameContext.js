@@ -1,10 +1,10 @@
 import React, { useState, useEffect, createContext } from 'react'
 
-const GlobalContext = createContext()
+const GameContext = createContext()
 
-const GlobalProvider = (props) => {
+const GameProvider = (props) => {
   const [games, setGames] = useState([])
-  const [gamenights, setGameNights] = useState(() => {
+  const [gameNights, setGameNights] = useState(() => {
     const saved = localStorage.getItem("storedGameNights");
     const existingGameNights = JSON.parse(saved);
     return existingGameNights || []
@@ -38,33 +38,33 @@ const GlobalProvider = (props) => {
   }, [])
 
   useEffect(() => {
-    localStorage.setItem("storedGameNights", JSON.stringify(gamenights))
+    localStorage.setItem("storedGameNights", JSON.stringify(gameNights))
     setWinners(calculateStandings)
-  }, [gamenights])
+  }, [gameNights])
 
 
   const addGameNight = (newGameNight) => {
-    setGameNights([...gamenights, newGameNight])
+    setGameNights([...gameNights, newGameNight])
   }
 
   const addWinner = (newWinner) => {
-    const currentGameNight = gamenights.find(gamenight => gamenight.id === newWinner.id)
-    const otherGameNights = gamenights.filter(gamenight => gamenight.id !== newWinner.id)
+    const currentGameNight = gameNights.find(gameNight => gameNight.id === newWinner.id)
+    const otherGameNights = gameNights.filter(gameNight => gameNight.id !== newWinner.id)
     currentGameNight.gamesPlayed.push(newWinner)
     setGameNights([...otherGameNights, currentGameNight])
   }
 
-  const calculateStandings = gamenights.map((gamenight) => {
+  const calculateStandings = gameNights.map((gamenight) => {
     return gamenight.gamesPlayed
   }).flat().map((game => game.winner)).map(winner => winner.toLowerCase())
 
 
   return (
-      <GlobalContext.Provider value={{games, gamenights, winners, addGameNight, addWinner}}>
+      <GameContext.Provider value={{games, gameNights, winners, addGameNight, addWinner}}>
         {props.children}
-      </GlobalContext.Provider>
+      </GameContext.Provider>
     )
 }
 
-export {GlobalContext, GlobalProvider}
+export {GameContext, GameProvider}
 

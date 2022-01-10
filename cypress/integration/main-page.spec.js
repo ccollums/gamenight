@@ -12,7 +12,12 @@ describe('main page',() => {
       .get('input[name="date"]').type('12/15/2021')
       .get('input[name="location"]').type('Coffee Shop')
       .get('input[name="players"]').type('Adam, Kyra, Carl')
-})
+  })
+
+  // Add test for Home, Games and About tabs
+  // Add separate spec file for Games and About
+  // Test for games and about should start with clicking on the link from the main page
+  // and testing that the data has populated upon the click
 
   it('should contain a header', () => {
     cy.contains('h1', 'gamenight')
@@ -25,7 +30,7 @@ describe('main page',() => {
   });
 
   it('When a user fills out and submits the game night form, a game night card is rendered', () => {
-    cy.get("button").click();
+    cy.get(".game-night-form > button").click();
     
     cy.get('.game-container')
       .get('p').contains("12/15/2021")
@@ -34,12 +39,12 @@ describe('main page',() => {
       .get('form').contains('Select Winner')
   })
 
-  it('A game play form should contain the players and available games', () => {
-    cy.get("button").click();
+  it.only('A game play form should contain the players and available games', () => {
+    cy.get(".game-night-form > button").click();
     
     cy.get('.game-container')
       .get('.game-play-form')
-      .get('select').eq(0).should('have.value', 'Select Game')
+      .get('input[name="game"]').should('have.value', 'Select Game')
       .get('select').eq(1).should('have.value', 'Select Winner')
       .get('select').eq(0).select('Gloomhaven').should('have.value', 'Gloomhaven')
       .get('select').eq(1).select('Adam').should('have.value', 'Adam')
