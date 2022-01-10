@@ -6,20 +6,18 @@ import dice from '../images/dice.svg'
 const Nav = () => {
   return (
     <header>
-      <div className='left-section'>
-        <img className='dice' src={dice} alt='logo of single dice'/>
+      <div className='logo-title'>
+        <img className='dice' src={dice} alt='logo of single dice' />
         <div className='title-tagline'>
-          <h1 className='appTitle'>gamenight</h1>
+          <h1>gamenight</h1>
           <p>Where friends come to play...</p>
-       </div>
+        </div>
       </div>
-      <div className='right-section'>
         <nav>
-         <Link to={'/'} style={{ textDecoration: 'none' }}><li className='links'>Home</li></Link>
-         <Link to={'/games'} style={{ textDecoration: 'none' }}><li className='links'>Games</li></Link>
-         <Link to={'/about'} style={{ textDecoration: 'none' }}><li className='links'>About</li></Link>
+          <Link className='links' to={'/'}>Home</Link>
+          <Link className='links' to={'/games'} style={{ textDecoration: 'none' }}>Games</Link>
+          <Link className='links' to={'/about'}>About</Link>
         </nav>
-      </div>
     </header>
   )
 }

@@ -9,34 +9,32 @@ header {
   padding: 1em;
 }
 
-.title-tagline {
-  display: flex;
-  flex-direction: column;
-  margin: 0 1em 0 1em;
+h1 {
+  font-size: 5vh;
 }
 
 nav {
   display: flex;
 }
 
+.logo-title {
+  display: flex;
+  align-items: center;
+}
+
+.title-tagline {
+  display: flex;
+  flex-direction: column;
+  margin: .5em 1em 0 1em;
+}
+
 .dice {
-  height: 15vh;
+  height: 14vh;
   margin-top: .5em;
 }
 
 .links {
   color: white;
   text-decoration: none;
-  list-style-type: none;
   margin: 0 3em;
 }
-
-.left-section {
-  display: flex;
-  align-items: center;
-}
-
-.appTitle {
-  font-size: 5vh;
-}
-

@@ -1,4 +1,4 @@
-import React, { useContext } from 'react';
+import React from 'react';
 import '../css/GameInfoCard.css';
 
 const GameInfoCard = ({ name, price, image, url, minPlayers, maxPlayers}) => {

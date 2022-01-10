@@ -6,17 +6,12 @@
 }
 
 body {
-  border: 2px solid green;
   min-height: 100vh;
   display: flex;
   justify-content: center;
 }
 
-.form-standings {
+.form-standings-section {
   display: flex;
   justify-content: space-around;
-}
-
-.App {
-  text-align: center;
 }

@@ -16,14 +16,17 @@ const Standings = () => {
 
   const sortStandings = Object.entries(generateStandings).sort((a, b) => b[1] - a[1]).map((winner, index) => {
     return <div key={index}>
-      <p>{winner[0]}</p>
-      <p>{winner[1]}</p>
+      <p className="winner">{winner[0]}</p>
+      <p className="wins">{winner[1]}</p>
       </div>
   })
 
   return(
     <section className="standings">
-      <h1>{sortStandings}</h1>
+      <h2>Overall Standings</h2>
+      <div className="ranks">
+        {sortStandings}
+      </div>
     </section>
   )
 }
