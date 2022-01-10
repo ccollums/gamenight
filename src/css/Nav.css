@@ -9,12 +9,12 @@ header {
   padding: 1em;
 }
 
-h1 {
-  font-size: 5vh;
-}
-
 nav {
   display: flex;
+}
+
+h1 {
+  font-size: 2em;
 }
 
 .logo-title {

@@ -11,7 +11,12 @@ body {
   justify-content: center;
 }
 
+main {
+  padding: 2.5em;
+  background: #F9F8F6;
+}
+
 .form-standings-section {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
 }
