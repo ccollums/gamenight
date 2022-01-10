@@ -1,6 +1,6 @@
 import React from 'react';
-import '../css/GameResultsContainer.css';
 import GameCard from './GameCard'
+import '../css/GameResultsContainer.css';
 
 const GameResultsContainer = ({ gamesPlayed }) => {
   const displayGamesPlayed = gamesPlayed.map((game, index) => {
@@ -8,7 +8,7 @@ const GameResultsContainer = ({ gamesPlayed }) => {
   })
 
   return(
-    <section>
+    <section className="game-results-container">
       {displayGamesPlayed}
     </section>
   )

@@ -12,11 +12,24 @@ body {
 }
 
 main {
-  padding: 2.5em;
+padding: 2.5em;
   background: #F9F8F6;
+  min-height: 80vh;
 }
 
 .form-standings-section {
   display: flex;
   justify-content: space-between;
+}
+
+.game-night-form,
+.game-container,
+input,
+button,
+.date-location p {
+  box-shadow: 0 3px 9px -3px rgba(0, 0, 0, .3);
+}
+
+button:hover {
+  cursor: pointer;
 }

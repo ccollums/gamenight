@@ -22,6 +22,7 @@ const GameContainer = () => {
 
   return(
     <section className="game-container">
+      <button className="clear-button">Clear</button>
       {displayGameNights}
     </section>
   )

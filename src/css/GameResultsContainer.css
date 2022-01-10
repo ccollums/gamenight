@@ -1,0 +1,4 @@
+.game-results-container {
+  border: 2px solid purple;
+  display: flex;
+}

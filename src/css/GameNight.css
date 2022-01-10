@@ -1,4 +1,26 @@
 .game-night {
   display: flex;
-  justify-content: space-around;
+  min-height: 25vh;
+  justify-content: space-between;
+  align-items: center;
+  border: 2px solid #F65C00;
+  border-radius: 10px;
+  padding: 1em;
+  margin-bottom: 1.5em;
+}
+
+.date-location {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 13vh;
+}
+
+.date-location p {
+  background: #FBC89E;
+  border-radius: 10px;
+  /* margin-bottom: 1em; */
+  padding: .5em 2.2em;
+  width: 120%;
+  text-align: center;
 }
