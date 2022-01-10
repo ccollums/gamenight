@@ -1,5 +1,35 @@
 .game-night-form {
-  border: 1px solid purple;
+  align-items: center;
+  background: #fff;
+  border-radius: 20px;
   display: flex;
   flex-direction: column;
+  justify-content: space-around;
+  min-width: 48%;
+  padding: 1em;
+}
+
+.game-night-form input {
+  border: 2px solid #F65C00; 
+  border-radius: 10px;
+  height: 2.2em;
+  padding: .5em;
+  width: 50%;
+}
+
+.game-night-form button {
+  background: #F65C00;
+  border: 0;
+  border-radius: 7px;
+  color: #fff;
+  font-size: 1em;
+  min-height: fit-content;
+  padding: .5em;
+  width: 35%;
+}
+
+.game-night-form,
+input,
+button {
+  box-shadow: 0 3px 9px -3px rgba(0, 0, 0, .3);
 }

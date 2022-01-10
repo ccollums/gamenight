@@ -3,6 +3,4 @@
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(250px, auto));
   gap: 1% 2%;
-  /* overflow: scroll; */
-  /* height: 80vh; */
   }

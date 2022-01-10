@@ -1,3 +1,20 @@
 .game-container {
-  border: 2px solid pink;
+  background: #fff;
+  border-radius: 20px;
+  margin-top: 2em;
+  min-height: 35vh;
+  padding: 1.3em;
+  text-align: right;
+}
+
+.clear-btn {
+  background: #F65C00;
+  border: 0;
+  border-radius: 7px;
+  color: #fff;
+  font-size: 1em;
+  min-height: fit-content;
+  padding: .5em;
+  width: 10%;
+  margin-bottom: 1.3em;
 }

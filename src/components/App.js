@@ -16,13 +16,13 @@ const App = () => {
         <Nav />
           <Routes>
             <Route path="/" element={
-            <React.Fragment>
-              <section className="form-standings">
+            <main>
+              <section className="form-standings-section">
                 <GameNightForm />
                 <Standings />
               </section>
                 <GameContainer />
-            </React.Fragment>}/>
+            </main>}/>
             <Route path="/about" element={<About />}/>
             <Route path="/games" element={<Games />}/>
           </Routes>

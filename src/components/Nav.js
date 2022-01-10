@@ -8,14 +8,13 @@ const Nav = () => {
 
   return (
     <header>
-      <div className='left-section'>
-        <img className='dice' src={dice} alt='logo of single dice'/>
+      <div className='logo-title'>
+        <img className='dice' src={dice} alt='logo of single dice' />
         <div className='title-tagline'>
-          <h1 className='appTitle'>gamenight</h1>
+          <h1>gamenight</h1>
           <p>Where friends come to play...</p>
-       </div>
+        </div>
       </div>
-      <div className='right-section'>
         <nav>
         <ul className={!isActive ? 'nav-menu': undefined}>
           <div className='nav-item'>

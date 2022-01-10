@@ -1,0 +1,6 @@
+.game-results-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(100px, auto));
+  min-width: 45%;
+  grid-gap: .2em;
+}
