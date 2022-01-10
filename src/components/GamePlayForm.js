@@ -56,7 +56,7 @@ const GamePlayForm = ({ players, id }) => {
         {generatePlayersDropdown}
       </select>
       <button className="add-game-btn" onClick={e => submitWinner(e)}>Add Game</button>
-      {error && <p>Please select an option from all fields!</p>}
+      {error && <p className="form-error">Please select an option from all fields!</p>}
     </form>
   )
 }

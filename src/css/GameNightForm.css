@@ -17,6 +17,10 @@
   width: 50%;
 }
 
+input[type='date'] {
+  color: #757575;
+}
+
 .game-night-form button {
   background: #F65C00;
   border: 0;
@@ -26,6 +30,11 @@
   min-height: fit-content;
   padding: .5em;
   width: 35%;
+}
+
+.game-night-form p {
+  color: #757575;
+  font-size: .7em;
 }
 
 .game-night-form,

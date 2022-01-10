@@ -3,7 +3,7 @@ import { GameContext } from '../context/GameContext';
 import '../css/GameNightForm.css';
 
 const GameNightForm = () => {
-  const [date, setDate] = useState('');
+  const [date, setDate] = useState(new Date().toISOString().substr(0, 10));
   const [location, setLocation] = useState('');
   const [players, setPlayers] = useState([]);
   const [error, setError] = useState(false);
@@ -36,9 +36,9 @@ const GameNightForm = () => {
   return(
     <form className="game-night-form">
       <input
-        type="text"
+        type="date"
+        max={new Date().toISOString().substr(0, 10)}
         name="date"
-        placeholder="Date"
         value={date}
         onChange={e => setDate(e.target.value)}/>
       <input
@@ -54,7 +54,7 @@ const GameNightForm = () => {
         value={players}
         onChange={e => setPlayers(e.target.value)}/>
       <button onClick={e => submitGameNight(e)}>Start Game Night!</button>
-      {error && <p>Please fill out all fields!</p>  }
+      {error ? <p>Please fill out all fields!</p> : <p style={{opacity: "0"}}>Error placeholder</p>}
     </form>
   )
 }
