@@ -9,7 +9,6 @@ describe('main page',() => {
   })
 
   cy.get('.game-night-form')
-      .get('input[name="date"]').type('12/15/2021')
       .get('input[name="location"]').type('Coffee Shop')
       .get('input[name="players"]').type('Adam, Kyra, Carl')
   })
@@ -24,7 +23,6 @@ describe('main page',() => {
   })
 
   it('When data is put into the form, the value is reflected in that form input', () => {
-    cy.get('input[name="date"]').should('have.value', '12/15/2021')
     cy.get('input[name="location"]').should('have.value', 'Coffee Shop')
     cy.get('input[name="players"]').should('have.value', 'Adam, Kyra, Carl')
   });
@@ -33,39 +31,38 @@ describe('main page',() => {
     cy.get(".game-night-form > button").click();
     
     cy.get('.game-container')
-      .get('p').contains("12/15/2021")
       .get('p').contains("Coffee Shop")
-      .get('form').contains('Select Game')
-      .get('form').contains('Select Winner')
+      .get('form').contains('Game')
+      .get('form').contains('Winner')
   })
 
-  it.only('A game play form should contain the players and available games', () => {
+  it('A game play form should contain the players and available games', () => {
     cy.get(".game-night-form > button").click();
     
     cy.get('.game-container')
       .get('.game-play-form')
-      .get('input[name="game"]').should('have.value', 'Select Game')
-      .get('select').eq(1).should('have.value', 'Select Winner')
+      .get('[name="game"]').contains('Game')
+      .get('select').eq(1).should('have.value', 'Winner')
       .get('select').eq(0).select('Gloomhaven').should('have.value', 'Gloomhaven')
       .get('select').eq(1).select('Adam').should('have.value', 'Adam')
-      .get('select').eq(1).select('Kyra').should('have.value', ' Kyra')
-      .get('select').eq(1).select('Carl').should('have.value', ' Carl')
+      .get('select').eq(1).select('Kyra').should('have.value', 'Kyra')
+      .get('select').eq(1).select('Carl').should('have.value', 'Carl')
   })
 
   it('When a user selects a game and a game winner, a game card displaying the game image and winner is rendered', () => {
-    cy.get("button").click();
+    cy.get(".game-night-form > button").click();
 
     cy.get('.game-container')
       .get('.game-play-form')
-      .get('select').eq(0).select('Gloomhaven')
+      .get('[name="game"]').eq(0).select('Gloomhaven')
       .get('select').eq(1).select('Kyra')
       .get('.game-play-form').find("button").click()
       .get('.game-card').find('img').should('have.attr', 'alt').should('include', 'Gloomhaven')
-      .get('.game-card').contains('Kyra')
+      .get('.game-card').contains('kyra')
   })
 
   it('The standings should reflect the game winner', () => {
-    cy.get("button").click();
+    cy.get(".game-night-form > button").click();
 
     cy.get('.game-container')
       .get('.game-play-form')
