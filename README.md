@@ -1,83 +1,107 @@
-# gamenight
+# Gamenight
 
-Mod3 2108 FE -- Group Project 
-
-## A Front End Engineering Project By:
-
-  - [Carly Collums](https://github.com/ccollums)
-  - [Kyra Bergsund](https://github.com/kbergsund)
-  - [Adam Burgess](https://github.com/aburg15)
+###### Where friends come to play...
 
 ## Table of Contents
-  - [Installation + Setup](#set-up)
-  - [Abstract](#abstract)
-  - [Deployed Site](#deployed-site)  
-  - [Technologies](#technologies)
-  - [Project Specs](#project-specs)
-  - [Site Overview](#site-overview)
-  - [Architecture](#architecture)
-  - [Artists](#artists)
-  - [Wins](#wins)
-  - [Future Improvements](#future-improvements)
+  - [Installation + Setup](#Set-Up)
+  - [Introduction](#Introduction)  
+  - [Technologies](#Technologies)
+  - [Deployment](#Deployment)
+  - [Project Specs](#Project-Specs)
+  - [Site Overview](#Site-Overview)
+  - [Architecture](#Architecture)
+  - [Artists](#Artists)
+  - [Wins and Challenges](#Wins-And-Challenges)
+  - [Future Improvements](#Future-Improvements)
+  - [Authors](#Authors)
 
-## Installation + Setup
-
-   - Clone this repo down to your local machine: [here](https://github.com/ccollums/gamenight)
-   - On the command line, type: **$ npm install**
-   - On the command line, type: **$ npm start**
-   - Visit http://localhost:3000/#/ in the browser.
-
-## Abstract
+## Introduction 
 
 (Write here)
 
-## Deployed Site 
-
-ADD LINK 
-
 ## Technologies
   - Javascript
-  - React with Hooks
+  - React + Hooks
   - Global State Management (Context API's)
   - Router
   - Cypress
+  - Day.js
+  - RESTful APIs
   - CSS / HTML
   - Atom / VSCode
   - Git Version Control / GitHub
   - Google Chrome or Web Browser of User's Choice
   - Mac OS Terminal/Command Line
 
+## Deployment
+
+ADD LINK HERE 
+
+**To view in browser:**
+1. Visit the deployment link above 
+
+**To run locally:**
+1. Clone this repo down to your local machine: [here](https://github.com/ccollums/gamenight)
+2. On the command line, type: `npm install`
+3. On the command line, type: `npm start`
+4. Visit `http://localhost:3000/#/`
+
    
 ## Project Specs
    - The project spec can be found [here](https://frontend.turing.edu/projects/module-3/stretch.html)
  
-## Site Overview  
+## Site Overview 
 
-(images, gifs, video here)
+- [Home Page](#Home-Page)
+- [Add Game Night](#Add-Game-Night)
+- [Add Game and Winner](#Add-Game-And-Winner)
+- [Games Page](#Games-Page)
+- [About Page](#About-Page)
 
-<p align="center">
-<img src="" width="900" align="center">
-</p>
+### Home Page 
 
-<p align="center">
-<img width="900" alt="" src="">
-</p>
+### Add Game Night 
 
+### Add Game and Winner 
+
+### Games Page 
+
+### About Page 
 
 ## Architecture
   (explain here)
+  
+## Wins And Challenges 
 
+### Wins
+
+(add here)
+
+### Challenges 
+
+(add here)
+  
+## Future Improvements
+
+(add here)
 
 ## Artists
 
 - Dice by Chris Dawson from NounProject.com (Used for our logo)
 
-## Wins
+## Authors 
 
-(add here)
-  
-
-## Future Improvements
-
-(add here)
+<table>
+    <tr>
+        <td> Carly Collums <a href="https://github.com/ccollums">GH</td>
+        <td> Kyra Bergsund <a href="https://github.com/kbergsund">GH</td>
+        <td> Adam Burgess <a href="https://github.com/aburg15">GH</td>
+    </tr>
+<td><img src="https://avatars.githubusercontent.com/u/86894344?v=4" alt="Carly Collums"
+ width="150" height="auto" /></td>
+ <td><img src="https://avatars.githubusercontent.com/u/49960644?v=4" alt="Kyra Bergsund"
+ width="150" height="auto" /></td>
+ <td><img src="https://avatars.githubusercontent.com/u/77649894?v=4" alt="Adam Burgess"
+ width="150" height="auto" /></td>
+</table>
   
