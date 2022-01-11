@@ -1,9 +1,10 @@
 import React, { useState, useContext } from 'react';
 import { GameContext } from '../context/GameContext';
+import dayjs from 'dayjs';
 import '../css/GameNightForm.css';
 
 const GameNightForm = () => {
-  const [date, setDate] = useState(new Date().toISOString().substr(0, 10));
+  const [date, setDate] = useState(dayjs().format('YYYY-MM-DD'));
   const [location, setLocation] = useState('');
   const [players, setPlayers] = useState([]);
   const [error, setError] = useState(false);
@@ -15,7 +16,7 @@ const GameNightForm = () => {
       setError(true)
     } else {
       const newGameNight = {
-        date, 
+        date: dayjs(date).format('M/D/YYYY'),
         location,
         players: players.split(','),
         id: Date.now(),
@@ -37,7 +38,7 @@ const GameNightForm = () => {
     <form className="game-night-form">
       <input
         type="date"
-        max={new Date().toISOString().substr(0, 10)}
+        max={dayjs().format('YYYY-MM-DD')}
         name="date"
         value={date}
         onChange={e => setDate(e.target.value)}/>
