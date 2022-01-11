@@ -18,18 +18,18 @@
 (Write here)
 
 ## Technologies
-  - Javascript
-  - React + Hooks
+  - ![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)
+  - ![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB) + Hooks
+  - ![ReactRouter](https://img.shields.io/badge/-React%20Router-211f20?logo=react-router&logoColor=61DAFB&style=for-the-badge)
+  - ![Cypress](https://img.shields.io/badge/-cypress-black?logo=cypress&logoColor=white&style=for-the-badge)
+  - ![JSX](https://img.shields.io/badge/-jsx-302f2f?logo=javascript&logoColor=9428cb&style=for-the-badge)
+  - ![VSCode](https://img.shields.io/badge/-VSCode-2C2C32?logo=visual-studio-code&logoColor=007ACC&style=for-the-badge)
+  - ![Figma](https://img.shields.io/badge/figma-%23F24E1E.svg?style=for-the-badge&logo=figma&logoColor=white)
+  - ![NPM](https://img.shields.io/badge/NPM-%23000000.svg?style=for-the-badge&logo=npm&logoColor=white)
   - Global State Management (Context API's)
-  - Router
-  - Cypress
   - Day.js
   - RESTful APIs
   - CSS / HTML
-  - Atom / VSCode
-  - Git Version Control / GitHub
-  - Google Chrome or Web Browser of User's Choice
-  - Mac OS Terminal/Command Line
 
 ## Deployment
 
