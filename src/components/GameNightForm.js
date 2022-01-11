@@ -9,7 +9,7 @@ const GameNightForm = () => {
   const [error, setError] = useState(false);
   const { addGameNight } = useContext(GameContext)
 
-  const submitGameNight = (e) => {
+  const submitGameNight = e => {
     e.preventDefault();
       if (!date || !location || !players.length) {
       setError(true)
