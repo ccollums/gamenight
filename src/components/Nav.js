@@ -6,7 +6,7 @@ import dice from '../images/dice.svg'
 const Nav = () => {
   const [isActive, setActive] = useState(false);
 
-  const styling = <style jsx>{`
+  const styling = <style jsx='true'>{`
   .bar1 {
     transform: ${isActive ? 'translateY(17px) rotate(45deg)' : 'rotate(0)'};
   }
@@ -23,11 +23,11 @@ const Nav = () => {
   return (
     <header>
       <div className='logo-title'>
-        <img className='dice' src={dice} alt='logo of single dice' />
-        <div className='title-tagline'>
+        <Link to='/'><img className='dice' src={dice} alt='logo of single dice' /></Link>
+        <Link to='/' className='title-tagline'>
           <h1>gamenight</h1>
           <p>Where friends come to play...</p>
-        </div>
+        </Link>
       </div>
       <nav>
         <ul className={!isActive ? 'nav-menu' : null}>

@@ -8,7 +8,7 @@ const GameNightForm = () => {
   const [location, setLocation] = useState('');
   const [players, setPlayers] = useState([]);
   const [error, setError] = useState(false);
-  const { addGameNight } = useContext(GameContext)
+  const { addGameNight } = useContext(GameContext);
 
   const submitGameNight = e => {
     e.preventDefault();
@@ -18,7 +18,7 @@ const GameNightForm = () => {
       const newGameNight = {
         date: dayjs(date).format('M/D/YYYY'),
         location,
-        players: players.split(','),
+        players: players.split(', '),
         id: Date.now(),
         gamesPlayed: []
       }
@@ -51,7 +51,7 @@ const GameNightForm = () => {
       <input
         type="text"
         name="players"
-        placeholder="Players (separated by comma)"
+        placeholder="Player Names (separated by comma)"
         value={players}
         onChange={e => setPlayers(e.target.value)}/>
       <button onClick={e => submitGameNight(e)}>Start Game Night!</button>

@@ -10,7 +10,7 @@ const GameCard = ({ gameName, winner }) => {
     <section className="game-card">
       {playedGame && <img src={playedGame.img} alt={`${gameName} game box`} />}
       <p>{gameName }</p>
-      <p className="game-card-winner">Winner: {winner}</p>
+      <p className="game-card-winner">winner: {winner}</p>
     </section>
   )
 }

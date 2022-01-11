@@ -3,6 +3,7 @@ import React, { useState, useEffect, createContext } from 'react'
 const GameContext = createContext()
 
 const GameProvider = props => {
+  const [error, setError] = useState(null)
   const [games, setGames] = useState([])
   const [winners, setWinners] = useState([])
   const [gameNights, setGameNights] = useState(() => {
@@ -28,8 +29,8 @@ const GameProvider = props => {
       }).sort((a, b) => {
         return a.name.localeCompare(b.name)
       }))
-    } catch (e) {
-      console.log(e.message)
+    } catch (err) {
+      setError(err)
     }
   }
 
@@ -42,7 +43,7 @@ const GameProvider = props => {
     setGameNights([...otherGameNights, currentGameNight])
   }
 
-  const calculateStandings = gameNights.map((gamenight) => gamenight.gamesPlayed).flat().map((game => game.winner[0] === ' ' ? game.winner.slice(1).toLowerCase() : game.winner.toLowerCase()))
+  const calculateStandings = gameNights.map((gamenight) => gamenight.gamesPlayed).flat().map((game => game.winner.toLowerCase()))
 
   useEffect(() => {
     fetchGames()
@@ -54,7 +55,7 @@ const GameProvider = props => {
   }, [gameNights])
 
   return (
-    <GameContext.Provider value={{ games, gameNights, setGameNights, winners, addGameNight, addWinner }}>
+    <GameContext.Provider value={{ error, games, gameNights, setGameNights, winners, addGameNight, addWinner }}>
       {props.children}
     </GameContext.Provider>
   )
