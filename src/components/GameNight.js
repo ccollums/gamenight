@@ -5,7 +5,6 @@ import GamePlayForm from './GamePlayForm';
 
 
 const GameNight = ({ date, location, players, id, gamesPlayed }) => {
-
   return(
     <section className="game-night">
       <div className="date-location">

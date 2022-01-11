@@ -1,14 +1,14 @@
 import React from 'react';
 import '../css/GameInfoCard.css';
 
-const GameInfoCard = ({ name, price, image, url, minPlayers, maxPlayers}) => {
+const GameInfoCard = ({ name, price, image, url, minPlayers, maxPlayers }) => {
 
 	const validateNumberOfPlayers = minPlayers === maxPlayers ? <p>{minPlayers} players</p> : <p>{minPlayers}-{maxPlayers} players</p>
 
 	return (
 		<section className='game-page-card'>
 			<div className='button-container'>
-				<img className='game-page-images' src={image} alt={name}/>
+				<img className='game-page-images' src={image} alt={name} />
 				<a href={url} className='buy-button'>Buy</a>
 			</div>
 			<div className='game-details'>
@@ -20,4 +20,4 @@ const GameInfoCard = ({ name, price, image, url, minPlayers, maxPlayers}) => {
 	)
 }
 
-export default GameInfoCard; 
+export default GameInfoCard;

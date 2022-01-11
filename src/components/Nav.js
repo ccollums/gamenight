@@ -8,14 +8,14 @@ const Nav = () => {
 
   const styling = <style jsx>{`
   .bar1 {
-    transform: ${ isActive ? 'translateY(17px) rotate(45deg)' : 'rotate(0)'};
+    transform: ${isActive ? 'translateY(17px) rotate(45deg)' : 'rotate(0)'};
   }
   .bar2 {
-    transform: ${ isActive ? 'translateX(100%)' : 'translateX(0)'};
+    transform: ${isActive ? 'translateX(100%)' : 'translateX(0)'};
     opacity: ${isActive ? 0 : 1};
   }
   .bar3 {
-    transform: ${ isActive ? 'translateY(-17px) rotate(-45deg)' : 'rotate(0)'};
+    transform: ${isActive ? 'translateY(-17px) rotate(-45deg)' : 'rotate(0)'};
   }
   `}
   </style>
@@ -29,24 +29,24 @@ const Nav = () => {
           <p>Where friends come to play...</p>
         </div>
       </div>
-        <nav>
-        <ul className={!isActive ? 'nav-menu': null}>
+      <nav>
+        <ul className={!isActive ? 'nav-menu' : null}>
           <div className='nav-item'>
-            <Link to={'/'} style={{ textDecoration: 'none' }}><li className='links'>Home</li></Link>
+            <Link to={'/'} className='links' style={{ textDecoration: 'none' }}>Home</Link>
           </div>
           <div className='nav-item'>
-            <Link to={'/games'} style={{ textDecoration: 'none' }}><li className='links'>Games</li></Link>
+            <Link to={'/games'} className='links' style={{ textDecoration: 'none' }}>Games</Link>
           </div>
           <div className='nav-item'>
-            <Link to={'/about'} style={{ textDecoration: 'none' }}><li className='links'>About</li></Link>
-           </div>
-         </ul>
-         <div className={!isActive ? 'hamburger': null} onClick={() => setActive(!isActive)}>
-           <span className='bar bar1'></span>
-           <span className='bar bar2'></span>
-           <span className='bar bar3'></span>
-         </div>
-        </nav>
+            <Link to={'/about'} className='links' style={{ textDecoration: 'none' }}>About</Link>
+          </div>
+        </ul>
+        <div className={!isActive ? 'hamburger' : null} onClick={() => setActive(!isActive)}>
+          <span className='bar bar1'></span>
+          <span className='bar bar2'></span>
+          <span className='bar bar3'></span>
+        </div>
+      </nav>
       {styling}
     </header>
   )

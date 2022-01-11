@@ -8,13 +8,9 @@ const GamePlayForm = ({ players, id }) => {
   const [error, setError] = useState(false)
   const { games, addWinner } = useContext(GameContext);
 
-  const generateGamesDropdown = games.map((game) => {
-    return <option key={game.id}>{game.name}</option>
-  })
+  const generateGamesDropdown = games.map(game => <option key={game.id}>{game.name}</option>)
 
-  const generatePlayersDropdown = players.map((player) => {
-    return <option value={player}key={players.indexOf(player)}>{player}</option>
-  })
+  const generatePlayersDropdown = players.map(player => <option value={player}key={players.indexOf(player)}>{player}</option>)
 
   const submitWinner = e => {
     e.preventDefault()
