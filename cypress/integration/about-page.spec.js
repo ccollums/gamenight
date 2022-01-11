@@ -1,8 +1,14 @@
 describe('about page', () => {
   beforeEach(() => {
+    cy.fixture('./games.json').then((allGames) => {
+      cy.intercept('GET', 'https://api.boardgameatlas.com/api/search?order_by=rank&ascending=false&client_id=DSHOCsJGeA', {
+        statusCode: 200,
+        body: allGames
+      })
     cy.visit('http://localhost:3000/');
-    cy.get(':nth-child(3) > .links').click();
   })
+  cy.get(':nth-child(3) > .links').click();
+})
 
   it('should contain developer details', () => {
     cy.get('.playing-game-img')
@@ -40,5 +46,5 @@ describe('about page', () => {
     .should('exist')
     cy.get('.Carly > .summary-section > .personal-pages > .github > svg')
     .should('exist')
+    })
   })
-})

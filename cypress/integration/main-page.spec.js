@@ -1,3 +1,5 @@
+import dayjs from 'dayjs';
+
 describe('main page',() => {
   beforeEach(() => {
     cy.fixture('./games.json').then((allGames) => {
@@ -9,6 +11,7 @@ describe('main page',() => {
   })
 
   cy.get('.game-night-form')
+      .get('input[name="date"]').log(dayjs().format('YYYY-M-DD'))
       .get('input[name="location"]').type('Coffee Shop')
       .get('input[name="players"]').type('Adam, Kyra, Carl')
   })
@@ -24,7 +27,26 @@ describe('main page',() => {
     cy.contains('h1', 'gamenight')
   })
 
+  it('When incomplete data is put into the form, an error message appears', () => {
+    cy.get('input[name="players"]').clear()
+    cy.get(".game-night-form > button").click();
+    cy.get('.game-night-form > p')
+      .contains('Please fill out all fields!')
+  });
+
+  it('When incomplete data is put into the game winner form, an error message appears', () => {
+    cy.get(".game-night-form > button").click();
+    cy.get('.game-container')
+      .get('.game-play-form')
+      .get('[name="game"]').eq(0).select('Gloomhaven')
+      .get('.game-play-form').find("button").click()
+
+    cy.get('.game-play-form > p')
+      .contains('Please select an option from all fields!')
+  });
+
   it('When data is put into the form, the value is reflected in that form input', () => {
+    cy.get('input[name="date"]').should('have.value', (dayjs().format('YYYY-MM-DD')))
     cy.get('input[name="location"]').should('have.value', 'Coffee Shop')
     cy.get('input[name="players"]').should('have.value', 'Adam, Kyra, Carl')
   });
@@ -33,6 +55,7 @@ describe('main page',() => {
     cy.get(".game-night-form > button").click();
     
     cy.get('.game-container')
+    cy.get('.date-location > :nth-child(1)').contains((dayjs().format('M/DD/YYYY')))
       .get('p').contains("Coffee Shop")
       .get('form').contains('Game')
       .get('form').contains('Winner')
@@ -73,5 +96,4 @@ describe('main page',() => {
       .get('.game-play-form').find("button").click()
       .get('.standings').contains('kyra')
   })
-
 })
