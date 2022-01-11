@@ -13,10 +13,12 @@ describe('main page',() => {
       .get('input[name="players"]').type('Adam, Kyra, Carl')
   })
 
-  // Add test for Home, Games and About tabs
-  // Add separate spec file for Games and About
-  // Test for games and about should start with clicking on the link from the main page
-  // and testing that the data has populated upon the click
+  it('standings and game nights should be blank if no games have been played', () => {
+    cy.get('.ranks > p')
+      .contains('Currently no standings. Play some games!')
+    cy.get('.empty-container-msg')
+      .contains('No game nights yet, start one above!')
+  })
 
   it('should contain a header', () => {
     cy.contains('h1', 'gamenight')
