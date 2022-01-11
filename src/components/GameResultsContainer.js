@@ -3,12 +3,15 @@ import GameCard from './GameCard'
 import '../css/GameResultsContainer.css';
 
 const GameResultsContainer = ({ gamesPlayed }) => {
-  const displayGamesPlayed = gamesPlayed.map((game, index) => <GameCard key={index} gameName={game.game} winner={game.winner}/>)
+  const displayGamesPlayed = gamesPlayed.map((game, index) => <GameCard key={index} gameName={game.game} winner={game.winner} />)
 
-  return(
-    <section className="game-results-container">
-      {!gamesPlayed.length ? <p>Log a game and a winner at right!</p> : displayGamesPlayed}
-    </section>
+  return (
+    <React.Fragment>
+      {!gamesPlayed.length ? <p className="empty-games-msg">Log a game and a winner at right!</p> :
+        <section className="game-results-container">
+          {displayGamesPlayed}
+        </section>}
+    </React.Fragment>
   )
 }
 

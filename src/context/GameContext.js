@@ -14,7 +14,7 @@ const GameProvider = props => {
 
   const fetchGames = async () => {
     try {
-      const gameData = await fetch('https://api.boardgameatlas.com//search?order_by=rank&ascending=false&client_id=DSHOCsJGeA')
+      const gameData = await fetch('https://api.boardgameatlas.com/api/search?order_by=rank&ascending=false&client_id=DSHOCsJGeA')
       const { games } = await gameData.json()
       setGames(games.map(game => {
         return {
