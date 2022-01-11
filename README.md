@@ -3,7 +3,6 @@
 ###### Where friends come to play...
 
 ## Table of Contents
-  - [Installation + Setup](#Set-Up)
   - [Introduction](#Introduction)  
   - [Technologies](#Technologies)
   - [Deployment](#Deployment)
