@@ -7,6 +7,10 @@
   text-align: right;
 }
 
+.game-container p {
+  text-align: center;
+}
+
 .clear-btn {
   background: #F65C00;
   border: 0;
