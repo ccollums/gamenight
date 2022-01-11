@@ -9,7 +9,7 @@ const GameContainer = () => {
 
   const sortedGameNights = gameNights.sort((a, b) => new Date(b.date) - new Date(a.date))
 
-  const displayGameNights = !gameNights.length ? <p>No game nights yet, start one above!</p> :
+  const displayGameNights = !gameNights.length ? <p className="empty-container-msg">No game nights yet, start one above!</p> :
     sortedGameNights.map(gameNight => {
       return (
         <GameNight
