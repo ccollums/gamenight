@@ -38,6 +38,7 @@ const GameProvider = (props) => {
   }, [])
 
   useEffect(() => {
+    console.log(calculateStandings, "calculateStandings")
     localStorage.setItem("storedGameNights", JSON.stringify(gameNights))
     setWinners(calculateStandings)
   }, [gameNights])
@@ -54,9 +55,7 @@ const GameProvider = (props) => {
     setGameNights([...otherGameNights, currentGameNight])
   }
 
-  const calculateStandings = gameNights.map((gamenight) => {
-    return gamenight.gamesPlayed
-  }).flat().map((game => game.winner)).map(winner => winner.toLowerCase())
+  const calculateStandings = gameNights.map((gamenight) => gamenight.gamesPlayed).flat().map((game => game.winner[0] === ' ' ? game.winner.slice(1).toLowerCase() : game.winner.toLowerCase()))
 
   const clearGameNights = () => {
     setGameNights([])
