@@ -8,9 +8,9 @@
   - [Deployment](#Deployment)
   - [Project Specs](#Project-Specs)
   - [Site Overview](#Site-Overview)
-  - [Artists](#Artists)
   - [Wins and Challenges](#Wins-And-Challenges)
   - [Future Improvements](#Future-Improvements)
+  - [Artists](#Artists)
   - [Authors](#Authors)
 
 ## Introduction 
