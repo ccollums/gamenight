@@ -6,6 +6,7 @@
       "price": "47.99",
       "min_players": 2,
       "max_players": 4,
+      "url": "https://www.boardgameatlas.com/game/TAAifFP590/root",
       "thumb_url": "https://s3-us-west-1.amazonaws.com/5cc.images/games/uploaded/1629324760985.jpg"
     },
     {
@@ -14,6 +15,7 @@
       "price": "54.92",
       "min_players": 1,
       "max_players": 5,
+      "url": "https://www.boardgameatlas.com/game/yqR4PtpO8X/scythe",
       "thumb_url": "https://cdn.shopify.com/s/files/1/0513/4077/1515/products/scythe-board-game.jpg?v=1611090922"
     },
     {
@@ -22,6 +24,7 @@
       "price": "47.99",
       "min_players": 1,
       "max_players": 5,
+      "url": "https://www.boardgameatlas.com/game/5H5JS0KLzK/wingspan",
       "thumb_url": "https://s3-us-west-1.amazonaws.com/5cc.images/games/uploaded/1629325193747.png"
     },
     {
@@ -30,6 +33,7 @@
       "price": "111.47",
       "min_players": 1,
       "max_players": 4,
+      "url": "https://www.boardgameatlas.com/game/RLlDWHh7hR/gloomhaven",
       "thumb_url": "https://s3-us-west-1.amazonaws.com/5cc.images/games/uploaded/1559254920151-51ulRXlJ7LL.jpg"
     },
     {
@@ -38,6 +42,7 @@
       "price": "51.99",
       "min_players": 1,
       "max_players": 5,
+      "url": "https://www.boardgameatlas.com/game/fDn9rQjH9O/terraforming-mars",
       "thumb_url": "https://cdn.shopify.com/s/files/1/0513/4077/1515/products/terraforming-mars-board-game.jpg?v=1611091381"
     }
   ]

@@ -1,10 +1,10 @@
 describe('about page', () => {
   beforeEach(() => {
     cy.visit('http://localhost:3000/');
+    cy.get(':nth-child(3) > .links').click();
   })
 
   it('should contain developer details', () => {
-    cy.get(':nth-child(3) > .links').click();
     cy.get('.playing-game-img')
     .should('exist')
     cy.get('.Adam > .headshot')
@@ -28,7 +28,6 @@ describe('about page', () => {
   })
 
   it('should contain linkedin and github icons', () => {
-    cy.get(':nth-child(3) > .links').click();
     cy.get('.Adam > .summary-section > .personal-pages > .linkedin > svg')
     .should('exist')
     cy.get('.Kyra > .summary-section > .personal-pages > .linkedin > svg')
