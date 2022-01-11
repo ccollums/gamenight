@@ -37,7 +37,8 @@ ADD LINK
 
 ## Technologies
   - Javascript
-  - React 
+  - React with Hooks
+  - Global State Management (Context API's)
   - Router
   - Cypress
   - CSS / HTML
