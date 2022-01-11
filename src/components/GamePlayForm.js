@@ -10,7 +10,7 @@ const GamePlayForm = ({ players, id }) => {
 
   const generateGamesDropdown = games.map(game => <option key={game.id}>{game.name}</option>)
 
-  const generatePlayersDropdown = players.map(player => <option value={player}key={players.indexOf(player)}>{player}</option>)
+  const generatePlayersDropdown = players.map(player => <option value={player}key={players.indexOf(player)}>{player.toLowerCase()}</option>)
 
   const submitWinner = e => {
     e.preventDefault()
@@ -20,7 +20,7 @@ const GamePlayForm = ({ players, id }) => {
       const gamePlayed = {
         id,
         game,
-        winner
+        winner: winner.toLowerCase()
       }
       addWinner(gamePlayed)
       clearInputs();

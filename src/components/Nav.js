@@ -6,7 +6,7 @@ import dice from '../images/dice.svg'
 const Nav = () => {
   const [isActive, setActive] = useState(false);
 
-  const styling = <style jsx>{`
+  const styling = <style jsx='true'>{`
   .bar1 {
     transform: ${isActive ? 'translateY(17px) rotate(45deg)' : 'rotate(0)'};
   }

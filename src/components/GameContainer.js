@@ -2,9 +2,10 @@ import React, { useContext } from 'react';
 import '../css/GameContainer.css';
 import GameNight from './GameNight';
 import { GameContext } from '../context/GameContext';
+import ErrorPage from './ErrorPage';
 
 const GameContainer = () => {
-  const { gameNights, setGameNights } = useContext(GameContext)
+  const { gameNights, setGameNights, error } = useContext(GameContext)
 
   const sortedGameNights = gameNights.sort((a, b) => new Date(b.date) - new Date(a.date))
 
@@ -24,8 +25,11 @@ const GameContainer = () => {
 
   return (
     <section className="game-container">
-      <button className="clear-btn" onClick={() => setGameNights([])}>Clear</button>
-      {displayGameNights}
+      {error ? <ErrorPage /> :
+        <React.Fragment>
+          <button className="clear-btn" onClick={() => setGameNights([])}>Clear</button>
+          {displayGameNights}
+        </React.Fragment>}
     </section>
   )
 }
