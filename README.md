@@ -9,7 +9,6 @@
   - [Deployment](#Deployment)
   - [Project Specs](#Project-Specs)
   - [Site Overview](#Site-Overview)
-  - [Architecture](#Architecture)
   - [Artists](#Artists)
   - [Wins and Challenges](#Wins-And-Challenges)
   - [Future Improvements](#Future-Improvements)
@@ -60,16 +59,23 @@ ADD LINK HERE
 
 ### Home Page 
 
+(gif)
+
 ### Add Game Night 
+
+(gif)
 
 ### Add Game and Winner 
 
+(gif)
+
 ### Games Page 
+
+(gif)
 
 ### About Page 
 
-## Architecture
-  (explain here)
+(gif)
   
 ## Wins And Challenges 
 
