@@ -4,25 +4,27 @@ import GameNight from './GameNight';
 import { GameContext } from '../context/GameContext';
 
 const GameContainer = () => {
-  const { gameNights } = useContext(GameContext)
+  const { gameNights, setGameNights } = useContext(GameContext)
 
-  const displayGameNights = !gameNights.length ? <p>No game nights to display yet!  Start one above!</p> :
-    gameNights.map((gameNight) => {
+  const sortedGameNights = gameNights.sort((a, b) => new Date(b.date) - new Date(a.date))
+
+  const displayGameNights = !gameNights.length ? <p>No game nights yet, start one above!</p> :
+    sortedGameNights.map(gameNight => {
       return (
-        <GameNight 
-          date = {gameNight.date}
-          location = {gameNight.location}
-          players = {gameNight.players}
+        <GameNight
+          date={gameNight.date}
+          location={gameNight.location}
+          players={gameNight.players}
           id={gameNight.id}
-          key = {gameNight.id}
+          key={gameNight.id}
           gamesPlayed={gameNight.gamesPlayed}
         />
       )
     })
 
-  return(
+  return (
     <section className="game-container">
-      <button className="clear-btn">Clear</button>
+      <button className="clear-btn" onClick={() => setGameNights([])}>Clear</button>
       {displayGameNights}
     </section>
   )

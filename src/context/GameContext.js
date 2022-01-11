@@ -2,14 +2,14 @@ import React, { useState, useEffect, createContext } from 'react'
 
 const GameContext = createContext()
 
-const GameProvider = (props) => {
+const GameProvider = props => {
   const [games, setGames] = useState([])
+  const [winners, setWinners] = useState([])
   const [gameNights, setGameNights] = useState(() => {
     const saved = localStorage.getItem("storedGameNights");
     const existingGameNights = JSON.parse(saved);
     return existingGameNights || []
   })
-  const [winners, setWinners] = useState([])
 
   const fetchGames = async () => {
     try {
@@ -19,8 +19,8 @@ const GameProvider = (props) => {
         return {
           id: game.id,
           name: game.name,
-          price: game.price, 
-          min_players: game.min_players, 
+          price: game.price,
+          min_players: game.min_players,
           max_players: game.max_players,
           img: game.thumb_url,
           url: game.url
@@ -29,9 +29,20 @@ const GameProvider = (props) => {
         return a.name.localeCompare(b.name)
       }))
     } catch (e) {
-        console.log(e.message)
+      console.log(e.message)
     }
   }
+
+  const addGameNight = newGameNight => setGameNights([...gameNights, newGameNight])
+
+  const addWinner = newWinner => {
+    const currentGameNight = gameNights.find(gameNight => gameNight.id === newWinner.id)
+    const otherGameNights = gameNights.filter(gameNight => gameNight.id !== newWinner.id)
+    currentGameNight.gamesPlayed.push(newWinner)
+    setGameNights([...otherGameNights, currentGameNight])
+  }
+
+  const calculateStandings = gameNights.map((gamenight) => gamenight.gamesPlayed).flat().map((game => game.winner[0] === ' ' ? game.winner.slice(1).toLowerCase() : game.winner.toLowerCase()))
 
   useEffect(() => {
     fetchGames()
@@ -42,29 +53,12 @@ const GameProvider = (props) => {
     setWinners(calculateStandings)
   }, [gameNights])
 
-
-  const addGameNight = (newGameNight) => {
-    setGameNights([...gameNights, newGameNight])
-  }
-
-  const addWinner = (newWinner) => {
-    const currentGameNight = gameNights.find(gameNight => gameNight.id === newWinner.id)
-    const otherGameNights = gameNights.filter(gameNight => gameNight.id !== newWinner.id)
-    currentGameNight.gamesPlayed.push(newWinner)
-    setGameNights([...otherGameNights, currentGameNight])
-  }
-
-  const calculateStandings = gameNights.map((gamenight) => {
-    return gamenight.gamesPlayed
-  }).flat().map((game => game.winner)).map(winner => winner.toLowerCase())
-
-
   return (
-      <GameContext.Provider value={{games, gameNights, winners, addGameNight, addWinner}}>
-        {props.children}
-      </GameContext.Provider>
-    )
+    <GameContext.Provider value={{ games, gameNights, setGameNights, winners, addGameNight, addWinner }}>
+      {props.children}
+    </GameContext.Provider>
+  )
 }
 
-export {GameContext, GameProvider}
+export { GameContext, GameProvider }
 
