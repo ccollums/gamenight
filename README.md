@@ -76,7 +76,7 @@ Gamenight was completed as part of Turing School of Software & Designs’ intens
 
 ### About Page 
 
-<img width="700" alt="Screen Shot 2022-01-12 at 12 10 53 PM" src="https://user-images.githubusercontent.com/86894344/149206852-ea398f36-404d-42be-a299-825aa7516c11.png">
+<img width="700" alt="Screen Shot 2022-01-12 at 2 55 57 PM" src="https://user-images.githubusercontent.com/49960644/149236209-4f78c87f-93ab-45a8-a8e1-22ea6d9b69f1.png">
 
 ### Error Handling 
 
