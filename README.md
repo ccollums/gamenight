@@ -15,22 +15,21 @@
 
 ## Introduction 
 
-Gamenight was born out of a love for, well, game nights. We were motivated by a desire to have a simple interface for keeping track of the competition amoung friends, friendly or not. Part time-capsule & memory log, part scoreboard, we built game night for anyone who enjoys getting together with loved ones to battle it out for bragging rights.
-Gamenight was completed as part of Turing School of Software & Designs’ intensive Front-End Engineering program. The goal was to envision and build a complex React web app from scratch while also self-teaching a new concept over a week long project.
+Gamenight was born out of a love for, well, game nights. We were motivated by a shared desire for a simple interface that keeps track of the competition, friendly or not, among friends across multiple game nights. Part time capsule, part scoreboard, gamenight is for anyone who enjoys getting together with loved ones to battle it out for bragging rights. 
+
+Gamenight was completed as part of Turing School of Software & Designs’ intensive Front-End Engineering program. The goal was to envision and build a complex React web app from scratch while  self-teaching a new concept, global state management using React's Context API, in the span of one week. 
 
 ## Technologies
-  - ![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)
   - ![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB)
-  - ![ReactRouter](https://img.shields.io/badge/-React%20Router-211f20?logo=react-router&logoColor=61DAFB&style=for-the-badge)
-  - ![Cypress](https://img.shields.io/badge/-cypress-black?logo=cypress&logoColor=white&style=for-the-badge)
+  - ![React Router](https://img.shields.io/badge/-React%20Router-211f20?logo=react-router&logoColor=61DAFB&style=for-the-badge)
   - ![JSX](https://img.shields.io/badge/-jsx-302f2f?logo=javascript&logoColor=9428cb&style=for-the-badge)
-  - ![VSCode](https://img.shields.io/badge/-VSCode-2C2C32?logo=visual-studio-code&logoColor=007ACC&style=for-the-badge)
-  - ![Figma](https://img.shields.io/badge/figma-%23F24E1E.svg?style=for-the-badge&logo=figma&logoColor=white)
+  - ![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)
+  - ![Cypress](https://img.shields.io/badge/-cypress-black?logo=cypress&logoColor=white&style=for-the-badge)
   - ![NPM](https://img.shields.io/badge/NPM-%23000000.svg?style=for-the-badge&logo=npm&logoColor=white)
-  - Global State Management (Context API's) + React Hooks 
-  - Day.js
-  - RESTful APIs
-  - CSS / HTML
+  - ![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
+  - ![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
+  - ![Figma](https://img.shields.io/badge/figma-%23F24E1E.svg?style=for-the-badge&logo=figma&logoColor=white)
+  - ![VSCode](https://img.shields.io/badge/-VSCode-2C2C32?logo=visual-studio-code&logoColor=007ACC&style=for-the-badge)
 
 ## Deployment
 
@@ -46,8 +45,8 @@ Gamenight was completed as part of Turing School of Software & Designs’ intens
 4. Visit `http://localhost:3000/#/`
 
    
-## Project Spec
-   - The project spec can be found [here](https://frontend.turing.edu/projects/module-3/stretch.html)
+## Project Spec & Rubric
+   - The project spec & rubric can be found [here](https://frontend.turing.edu/projects/module-3/stretch.html)
  
 ## Site Overview 
 
@@ -108,7 +107,7 @@ Gamenight was completed as part of Turing School of Software & Designs’ intens
 ### Challenges 
 
 - We wanted to implement a hamburger button for a more responsive design, which proved to be more challenging in React than initially anticipated 
-- Using local storage along with Context API and React Hooks took a bit of self teaching compared to using local storage with Vanilla JS
+- Using localStorage along with Context API and React Hooks took a bit of self-teaching compared to using localStorage with Vanilla JS
   
 ## Future Improvements
 Now that our MVP functionality has been built out, there is still so much we would love to add in the future! 
