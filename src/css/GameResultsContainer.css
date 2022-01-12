@@ -3,8 +3,17 @@
   grid-template-columns: repeat(auto-fill, minmax(100px, auto));
   min-width: 45%;
   grid-gap: .2em;
+  padding: .2em;
 }
 
 .empty-games-msg {
   color: #757575;
+  margin: .5em;
+}
+
+@media screen and (max-width: 800px) {
+  .game-results-container {
+    min-width: 70%;
+    margin: 1.5em 0;
+  }
 }

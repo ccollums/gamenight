@@ -42,3 +42,10 @@ input,
 button {
   box-shadow: 0 3px 9px -3px rgba(0, 0, 0, .3);
 }
+
+@media screen and (max-width: 800px) {
+  .game-night-form {
+    margin-bottom: 2em;
+    min-height: 15em;
+  }
+}
