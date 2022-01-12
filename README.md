@@ -56,26 +56,34 @@ gamenight was completed as part of Turing School of Software & Designs’ intens
 - [Add Game and Winner](#Add-Game-And-Winner)
 - [Games Page](#Games-Page)
 - [About Page](#About-Page)
+- [Error Handling](#Error-Handling)
+- [Responsive Design](#Responsive-Design)
 
 ### Home Page 
 
-(gif)
+
 
 ### Add Game Night 
 
-(gif)
+
 
 ### Add Game and Winner 
 
-(gif)
+
 
 ### Games Page 
 
-(gif)
+
 
 ### About Page 
 
-(gif)
+
+
+### Error Handling 
+
+
+### Responsive Design 
+  
   
 ## Wins And Challenges 
 
