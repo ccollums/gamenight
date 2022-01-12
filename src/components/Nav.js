@@ -40,7 +40,7 @@ const Nav = () => {
         <Link to='/'><img className='dice' src={dice} alt='logo of single dice' /></Link>
         <Link to='/' className='title-tagline'>
           <h1>gamenight</h1>
-          <p>Where friends come to play...</p>
+          <p>where friends come to play...</p>
         </Link>
       </div>
       <nav>
@@ -54,19 +54,19 @@ const Nav = () => {
             <Link to={'/'}
               className='links'
               style={{ textDecoration: 'none' }}
-              onClick={() => isActive && setActive(!isActive)} >Home</Link>
+              onClick={() => isActive && setActive(!isActive)} >home</Link>
           </div>
           <div className='nav-item'>
             <Link to={'/games'}
               className='links'
               style={{ textDecoration: 'none' }}
-              onClick={() => isActive && setActive(!isActive)}>Games</Link>
+              onClick={() => isActive && setActive(!isActive)}>games</Link>
           </div>
           <div className='nav-item'>
             <Link to={'/about'}
               className='links'
               style={{ textDecoration: 'none' }}
-              onClick={() => isActive && setActive(!isActive)}>About</Link>
+              onClick={() => isActive && setActive(!isActive)}>about</Link>
           </div>
         </ul>
       </nav>
