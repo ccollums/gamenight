@@ -10,8 +10,8 @@
 	justify-content: space-around;
 }
 
-.Adam, 
-.Carly, 
+.Adam,
+.Carly,
 .Kyra {
 	display: flex;
 	align-items: center;
@@ -27,8 +27,8 @@
 	text-align: left;
 }
 
-.name, 
-.summary, 
+.name,
+.summary,
 .personal-pages {
 	margin: .7em;
 }
@@ -63,16 +63,17 @@
 		flex-direction: column;
 	}
 
-	.Adam, 
-	.Carly, 
+	.Adam,
+	.Carly,
 	.Kyra {
 		width: 90vw;
 	}
 }
 
 @media screen and (max-width: 820px) {
-	.Adam, 
-	.Carly, 
+
+	.Adam,
+	.Carly,
 	.Kyra {
 		display: flex;
 		flex-direction: column;

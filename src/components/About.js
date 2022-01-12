@@ -11,6 +11,12 @@ const About = () => {
 		<section className='about-page'>
 			<section className='collaborators'>
 				<div className='Adam'>
+					<p>
+						gamenight was born out of a love for, well, game nights. We were motivated by a desire to have a simple interface for keeping track of the competition. Part time capsule & memory log, part scoreboard, we built game night for anyone who enjoys getting together with loved ones to battle it out for bragging rights.
+						gamenight was completed as part of Turing School of Software & Designs’ intensive Front-End Engineering program. The goal was to envision and build a complex React web app from scratch. Check the README (link) for more info
+					</p>
+				</div>
+				<div className='Adam'>
 					<img className='headshot' src={Adam} alt='headshot of Adam Burgess' />
 					<div className='summary-section'>
 						<h2 className='name'>Adam Burgess</h2>
