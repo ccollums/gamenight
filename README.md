@@ -101,7 +101,7 @@ gamenight was completed as part of Turing School of Software & Designs’ intens
 ## Future Improvements
 Now that our MVP functionality has been built out, there is still so much we would love to add in the future! 
 
-- Add functinality to clear individual gamenights (in case of user error, creating an incorrect gamenight) 
+- Add functionality to clear individual gamenights (in case of user error, creating an incorrect gamenight) 
 - Add ability to delete indivdual game plays (once again to account for user error)
 - Access more than the top 25 board games, so that users can choose from more games
 - Allow users to add their own option for a game to be played on a game night 
