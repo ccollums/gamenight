@@ -105,7 +105,7 @@ Now that our MVP functionality has been built out, there is still so much we wou
 - Add ability to delete indivdual game plays (once again to account for user error)
 - Access more than the top 25 board games, so that users can choose from more games
 - Allow users to add their own option for a game to be played on a game night 
-- Add the ability to click on a game on the games page and be shown more details about that specific game.  
+- Add the ability to click on a game on the games page and be shown more details about that specific game
 
 ## Artists
 
