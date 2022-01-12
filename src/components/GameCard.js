@@ -7,10 +7,10 @@ const GameCard = ({ gameName, winner }) => {
   const { games } = useContext(GameContext)
   const playedGame = games.find(game => game.name === gameName)
 
-  return(
+  return (
     <section className="game-card">
       {playedGame && <img src={playedGame.img} alt={`${gameName} game box`} />}
-      <p>{gameName }</p>
+      <p>{gameName}</p>
       <p className="game-card-winner">winner: {winner}</p>
     </section>
   )
@@ -18,7 +18,7 @@ const GameCard = ({ gameName, winner }) => {
 
 export default GameCard;
 
-GameCard.propTypes = { 
+GameCard.propTypes = {
   gameName: propTypes.string.isRequired,
   winner: propTypes.string.isRequired,
 }

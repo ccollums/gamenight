@@ -23,9 +23,9 @@ const GameInfoCard = ({ name, price, image, url, minPlayers, maxPlayers }) => {
 
 export default GameInfoCard;
 
-GameInfoCard.propTypes = { 
-  name: propTypes.string.isRequired,
-  price: propTypes.number.isRequired,
-  image: propTypes.string.isRequired,
-  gamesPlayed: propTypes.array.isRequired
+GameInfoCard.propTypes = {
+	name: propTypes.string.isRequired,
+	price: propTypes.number.isRequired,
+	image: propTypes.string.isRequired,
+	gamesPlayed: propTypes.array.isRequired
 }

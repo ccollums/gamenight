@@ -10,7 +10,7 @@ const GamePlayForm = ({ players, id }) => {
 
   const generateGamesDropdown = games.map(game => <option key={game.id}>{game.name}</option>)
 
-  const generatePlayersDropdown = players.map(player => <option value={player}key={players.indexOf(player)}>{player.toLowerCase()}</option>)
+  const generatePlayersDropdown = players.map(player => <option value={player} key={players.indexOf(player)}>{player.toLowerCase()}</option>)
 
   const submitWinner = e => {
     e.preventDefault()
@@ -33,7 +33,7 @@ const GamePlayForm = ({ players, id }) => {
     setWinner('')
   }
 
-  return(
+  return (
     <form className="game-play-form">
       <select
         name="game"
@@ -52,7 +52,7 @@ const GamePlayForm = ({ players, id }) => {
         {generatePlayersDropdown}
       </select>
       <button className="add-game-btn" onClick={e => submitWinner(e)}>Add Game</button>
-      {error ? <p>Please select an option from all fields!</p> : <p style={{opacity: "0"}}>Error placeholder</p>}
+      {error ? <p>Please select an option from all fields!</p> : <p style={{ opacity: "0" }}>Error placeholder</p>}
     </form>
   )
 }

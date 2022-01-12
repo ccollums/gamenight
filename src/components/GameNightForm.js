@@ -12,7 +12,7 @@ const GameNightForm = () => {
 
   const submitGameNight = e => {
     e.preventDefault();
-      if (!date || !location || !players.length) {
+    if (!date || !location || !players.length) {
       setError(true)
     } else {
       const newGameNight = {
@@ -34,28 +34,28 @@ const GameNightForm = () => {
     setPlayers('')
   }
 
-  return(
+  return (
     <form className="game-night-form">
       <input
         type="date"
         max={dayjs().format('YYYY-MM-DD')}
         name="date"
         value={date}
-        onChange={e => setDate(e.target.value)}/>
+        onChange={e => setDate(e.target.value)} />
       <input
         type="text"
         name="location"
         placeholder="Location"
         value={location}
-        onChange={e => setLocation(e.target.value)}/>
+        onChange={e => setLocation(e.target.value)} />
       <input
         type="text"
         name="players"
         placeholder="Player Names (separated by comma)"
         value={players}
-        onChange={e => setPlayers(e.target.value)}/>
+        onChange={e => setPlayers(e.target.value)} />
       <button onClick={e => submitGameNight(e)}>Start Game Night!</button>
-      {error ? <p>Please fill out all fields!</p> : <p style={{opacity: "0"}}>Error placeholder</p>}
+      {error ? <p>Please fill out all fields!</p> : <p style={{ opacity: "0" }}>Error placeholder</p>}
     </form>
   )
 }

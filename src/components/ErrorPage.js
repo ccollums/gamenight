@@ -7,16 +7,16 @@ import '../css/ErrorPage.css';
 
 const ErrorPage = () => {
   const { error } = useContext(GameContext)
-  
-  const checkError = error ? <h2>{error.message} games. Try again later!</h2> : 
-  <React.Fragment>
-    <h2>Invalid URL</h2>
-    <Link className='error-btn' to='/'>Go Home!</Link>
-  </React.Fragment>
-  
-  return(
+
+  const checkError = error ? <h2>{error.message} games. Try again later!</h2> :
+    <React.Fragment>
+      <h2>Invalid URL</h2>
+      <Link className='error-btn' to='/'>Go Home!</Link>
+    </React.Fragment>
+
+  return (
     <section className="error-page">
-      <BiMessageSquareError size={100}/>
+      <BiMessageSquareError size={100} />
       {checkError}
     </section>
   )
