@@ -37,3 +37,11 @@ button,
 button:hover {
   cursor: pointer;
 }
+
+@media screen and (max-width: 800px) {
+  .form-standings-section {
+    flex-direction: column;
+  }
+
+  
+}
