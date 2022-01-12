@@ -30,7 +30,8 @@ padding: 2.5em;
 input,
 button,
 .date-location p,
-.error-btn {
+.error-btn,
+.headshot {
   box-shadow: 0 3px 9px -3px rgba(0, 0, 0, .3);
 }
 
@@ -42,6 +43,4 @@ button:hover {
   .form-standings-section {
     flex-direction: column;
   }
-
-  
 }

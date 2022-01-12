@@ -2,5 +2,12 @@
   padding: 35px;
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(250px, auto));
+  justify-items: center;
   gap: 1% 2%;
+  }
+
+  @media only screen and (max-width: 860px) {
+    .game-page-container {
+      grid-template-columns: repeat(auto-fill, minmax(200px, auto));
+    }
   }

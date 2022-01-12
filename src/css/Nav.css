@@ -2,7 +2,7 @@ header {
   background-color: #F65C00;
   color: white;
   width: 100vw;
-  height: 18vh;
+  min-height: 18vh;
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
@@ -31,8 +31,7 @@ h1 {
 }
 
 .dice {
-  height: 14vh;
-  margin-top: .7em;
+  min-height: 100px;
 }
 
 .links {

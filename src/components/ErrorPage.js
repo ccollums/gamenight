@@ -10,7 +10,7 @@ const ErrorPage = () => {
   const checkError = error ? <h2>{error.message} games. Try again later!</h2> : 
   <React.Fragment>
     <h2>Invalid URL</h2>
-    <Link className='error-btn' to='/'>Go Home!</Link>
+    <Link className='error-btn' to='/'>Go ]Home!</Link>
   </React.Fragment>
   
   return(
