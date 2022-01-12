@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/gamenight/static/css/main.2b5a5398.css",
-    "main.js": "/gamenight/static/js/main.96fd2286.js",
+    "main.css": "/gamenight/static/css/main.7e17e27b.css",
+    "main.js": "/gamenight/static/js/main.5b32e85e.js",
     "static/media/Carly.png": "/gamenight/static/media/Carly.a43ba0d3caa266deb4a9.png",
     "static/media/Kyra.png": "/gamenight/static/media/Kyra.77bcd8caad2eedba7315.png",
     "static/media/Adam.png": "/gamenight/static/media/Adam.842eefb8618750ca0d9e.png",
     "static/media/dice.svg": "/gamenight/static/media/dice.798fb8a587aba3fe137bba017d038943.svg",
     "static/media/playingGame.svg": "/gamenight/static/media/playingGame.37e0379446d57a27fd4e34f38990a341.svg",
     "index.html": "/gamenight/index.html",
-    "main.2b5a5398.css.map": "/gamenight/static/css/main.2b5a5398.css.map",
-    "main.96fd2286.js.map": "/gamenight/static/js/main.96fd2286.js.map"
+    "main.7e17e27b.css.map": "/gamenight/static/css/main.7e17e27b.css.map",
+    "main.5b32e85e.js.map": "/gamenight/static/js/main.5b32e85e.js.map"
   },
   "entrypoints": [
-    "static/css/main.2b5a5398.css",
-    "static/js/main.96fd2286.js"
+    "static/css/main.7e17e27b.css",
+    "static/js/main.5b32e85e.js"
   ]
 }
