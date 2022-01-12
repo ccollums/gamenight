@@ -61,30 +61,42 @@ Gamenight was completed as part of Turing School of Software & Designs’ intens
 
 ### Home Page 
 
-
+<img width="1431" alt="Screen Shot 2022-01-12 at 12 08 49 PM" src="https://user-images.githubusercontent.com/86894344/149206586-2f309431-35e4-49ed-b16f-dfba8e080e98.png">
 
 ### Add Game Night 
 
-
+<img width="1429" alt="Screen Shot 2022-01-12 at 12 15 33 PM" src="https://user-images.githubusercontent.com/86894344/149206776-b9cd1bcb-c47f-4d6c-9cf1-48e6537b3ece.png">
 
 ### Add Game and Winner 
 
-
+<img width="1430" alt="Screen Shot 2022-01-12 at 12 10 18 PM" src="https://user-images.githubusercontent.com/86894344/149206793-87788bab-85c1-45ad-9165-220021a206f1.png">
 
 ### Games Page 
 
-
+<img width="1431" alt="Screen Shot 2022-01-12 at 12 10 37 PM" src="https://user-images.githubusercontent.com/86894344/149206814-280db133-4092-4ad0-82fb-2778100028b1.png">
 
 ### About Page 
 
-
+<img width="1431" alt="Screen Shot 2022-01-12 at 12 10 53 PM" src="https://user-images.githubusercontent.com/86894344/149206852-ea398f36-404d-42be-a299-825aa7516c11.png">
 
 ### Error Handling 
 
+<img width="1435" alt="Screen Shot 2022-01-12 at 12 18 11 PM" src="https://user-images.githubusercontent.com/86894344/149207139-8c068992-2b8b-485c-a4d5-9cdee019742c.png">
 
-### Responsive Design 
+
+### Responsive Design
+ <table>
+ <td><img width="296" alt="Screen Shot 2022-01-12 at 12 12 34 PM" src="https://user-images.githubusercontent.com/86894344/149206896-afca787f-da74-48f6-b5c5-6e7447a3aac5.png"></td>
+
+<td><img width="297" alt="Screen Shot 2022-01-12 at 12 12 57 PM" src="https://user-images.githubusercontent.com/86894344/149206926-060344a4-498e-4e63-b800-ce7952d97f1c.png"></td>
+
+<td><img width="295" alt="Screen Shot 2022-01-12 at 12 13 08 PM" src="https://user-images.githubusercontent.com/86894344/149206943-2fcea5dd-9804-40fc-89e0-a30f02cad879.png"></td>
+ 
+<td><img width="296" alt="Screen Shot 2022-01-12 at 12 12 46 PM" src="https://user-images.githubusercontent.com/86894344/149206995-76fac202-daaa-4eed-be5a-b893cb289d00.png"></td>
   
-  
+</table>
+
+
 ## Wins And Challenges 
 
 ### Wins
