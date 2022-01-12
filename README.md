@@ -16,7 +16,7 @@
 ## Introduction 
 
 gamenight was born out of a love for, well, game nights. We were motivated by a desire to have a simple interface for keeping track of the competition amoung friends, friendly or not. Part time-capsule & memory log, part scoreboard, we built game night for anyone who enjoys getting together with loved ones to battle it out for bragging rights.
-gamenight was completed as part of Turing School of Software & Designs’ intensive Front-End Engineering program. The goal was to envision and build a complex React web app from scratch while also self teaching a new concept over a week long project.
+gamenight was completed as part of Turing School of Software & Designs’ intensive Front-End Engineering program. The goal was to envision and build a complex React web app from scratch while also self-teaching a new concept over a week long project.
 
 ## Technologies
   - ![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)
