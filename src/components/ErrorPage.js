@@ -2,6 +2,7 @@ import React, { useContext } from 'react';
 import { GameContext } from '../context/GameContext';
 import { BiMessageSquareError } from 'react-icons/bi';
 import { Link } from 'react-router-dom';
+import propTypes from 'prop-types';
 import '../css/ErrorPage.css';
 
 const ErrorPage = () => {
@@ -19,7 +20,6 @@ const ErrorPage = () => {
       {checkError}
     </section>
   )
-
 }
 
 export default ErrorPage;

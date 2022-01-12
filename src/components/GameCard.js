@@ -1,5 +1,6 @@
 import React, { useContext } from 'react';
 import { GameContext } from '../context/GameContext';
+import propTypes from 'prop-types';
 import '../css/GameCard.css';
 
 const GameCard = ({ gameName, winner }) => {
@@ -16,3 +17,8 @@ const GameCard = ({ gameName, winner }) => {
 }
 
 export default GameCard;
+
+GameCard.propTypes = { 
+  gameName: propTypes.string.isRequired,
+  winner: propTypes.string.isRequired,
+}

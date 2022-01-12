@@ -1,5 +1,6 @@
 import React from 'react';
 import '../css/GameInfoCard.css';
+import propTypes from 'prop-types';
 
 const GameInfoCard = ({ name, price, image, url, minPlayers, maxPlayers }) => {
 
@@ -21,3 +22,10 @@ const GameInfoCard = ({ name, price, image, url, minPlayers, maxPlayers }) => {
 }
 
 export default GameInfoCard;
+
+GameInfoCard.propTypes = { 
+  name: propTypes.string.isRequired,
+  price: propTypes.number.isRequired,
+  image: propTypes.string.isRequired,
+  gamesPlayed: propTypes.array.isRequired
+}

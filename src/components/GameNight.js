@@ -2,7 +2,7 @@ import React from 'react';
 import '../css/GameNight.css';
 import GameResultsContainer from './GameResultsContainer';
 import GamePlayForm from './GamePlayForm';
-
+import propTypes from 'prop-types';
 
 const GameNight = ({ date, location, players, id, gamesPlayed }) => {
   return(
@@ -18,3 +18,11 @@ const GameNight = ({ date, location, players, id, gamesPlayed }) => {
 }
 
 export default GameNight;
+
+GameNight.propTypes = { 
+  date: propTypes.string.isRequired,
+  location: propTypes.string.isRequired,
+  players: propTypes.array.isRequired,
+  id: propTypes.number.isRequired,
+  gamesPlayed: propTypes.array.isRequired
+}
