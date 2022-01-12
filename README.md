@@ -60,29 +60,29 @@ Gamenight was completed as part of Turing School of Software & Designs’ intens
 
 ### Home Page 
 
-<img width="1000" alt="Screen Shot 2022-01-12 at 12 08 49 PM" src="https://user-images.githubusercontent.com/86894344/149206586-2f309431-35e4-49ed-b16f-dfba8e080e98.png">
+<img width="700" alt="Screen Shot 2022-01-12 at 12 08 49 PM" src="https://user-images.githubusercontent.com/86894344/149206586-2f309431-35e4-49ed-b16f-dfba8e080e98.png">
 
 ### Add Game Night 
 
-<img width="1000" alt="Screen Shot 2022-01-12 at 12 15 33 PM" src="https://user-images.githubusercontent.com/86894344/149206776-b9cd1bcb-c47f-4d6c-9cf1-48e6537b3ece.png">
+<img width="700" alt="Screen Shot 2022-01-12 at 12 15 33 PM" src="https://user-images.githubusercontent.com/86894344/149206776-b9cd1bcb-c47f-4d6c-9cf1-48e6537b3ece.png">
 
 ### Add Game and Winner 
 
-<img width="1000" alt="Screen Shot 2022-01-12 at 12 10 18 PM" src="https://user-images.githubusercontent.com/86894344/149206793-87788bab-85c1-45ad-9165-220021a206f1.png">
+<img width="700" alt="Screen Shot 2022-01-12 at 12 10 18 PM" src="https://user-images.githubusercontent.com/86894344/149206793-87788bab-85c1-45ad-9165-220021a206f1.png">
 
 ### Games Page 
 
-<img width="1000" alt="Screen Shot 2022-01-12 at 12 10 37 PM" src="https://user-images.githubusercontent.com/86894344/149206814-280db133-4092-4ad0-82fb-2778100028b1.png">
+<img width="700" alt="Screen Shot 2022-01-12 at 12 10 37 PM" src="https://user-images.githubusercontent.com/86894344/149206814-280db133-4092-4ad0-82fb-2778100028b1.png">
 
 ### About Page 
 
-<img width="1000" alt="Screen Shot 2022-01-12 at 12 10 53 PM" src="https://user-images.githubusercontent.com/86894344/149206852-ea398f36-404d-42be-a299-825aa7516c11.png">
+<img width="700" alt="Screen Shot 2022-01-12 at 12 10 53 PM" src="https://user-images.githubusercontent.com/86894344/149206852-ea398f36-404d-42be-a299-825aa7516c11.png">
 
 ### Error Handling 
 
-<img width="1000" alt="Screen Shot 2022-01-12 at 12 18 11 PM" src="https://user-images.githubusercontent.com/86894344/149207139-8c068992-2b8b-485c-a4d5-9cdee019742c.png">
+<img width="700" alt="Screen Shot 2022-01-12 at 12 18 11 PM" src="https://user-images.githubusercontent.com/86894344/149207139-8c068992-2b8b-485c-a4d5-9cdee019742c.png">
 
-<img width="1000" alt="Screen Shot 2022-01-12 at 2 26 34 PM" src="https://user-images.githubusercontent.com/49960644/149233750-8b0784f9-5b18-4388-8134-6b866b04b419.png">
+<img width="700" alt="Screen Shot 2022-01-12 at 2 26 34 PM" src="https://user-images.githubusercontent.com/49960644/149233750-8b0784f9-5b18-4388-8134-6b866b04b419.png">
 
 ### Responsive Design
  <table>
