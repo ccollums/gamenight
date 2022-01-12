@@ -35,6 +35,10 @@
 
 .collaborators {
 	background-color: white;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
 }
 
 .playing-game-img {
@@ -57,6 +61,28 @@
 	color: #F65C00;
 }
 
+.app-summary {
+	width: 57vw;
+	padding:  .5em 1em;
+}
+
+.app-about h1 {
+	color: #F65C00;
+	margin-left: .3em;
+}
+
+.app-about {
+	margin: 2em .7em;
+	box-shadow: 0 3px 9px -3px rgba(0, 0, 0, .3);
+	border-radius: 10px;
+}
+
+.app-summary a {
+	color: #F65C00;
+	text-decoration: none;
+}
+
+
 @media screen and (max-width: 888px) {
 	.about-page {
 		display: flex;
@@ -66,6 +92,10 @@
 	.Adam, 
 	.Carly, 
 	.Kyra {
+		width: 90vw;
+	}
+
+	.app-summary {
 		width: 90vw;
 	}
 }

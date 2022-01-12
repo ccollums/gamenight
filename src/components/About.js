@@ -10,6 +10,14 @@ const About = () => {
 	return (
 		<section className='about-page'>
 			<section className='collaborators'>
+				<section className='app-about'>
+				<h1>About gamenight:</h1>
+				<p className='app-summary'>gamenight was born out of a love for, well, game nights. We were motivated by a desire to have a simple interface
+					for keeping track of the competition. Part time capsule & memory log, part scoreboard, we built game night for anyone
+					who enjoys getting together with loved ones to battle it out for bragging rights. Keep track of overall wins to save time arguing over who is the best. gamenight was completed as part of Turing
+					School of Software & Designs’ intensive Front-End Engineering program. The goal was to envision and build a complex React web 
+					app from scratch. Check the README <a href="https://github.com/ccollums/gamenight">HERE</a> for more info.</p>
+				</section>
 				<div className='Adam'>
 					<img className='headshot' src={Adam} alt='headshot of Adam Burgess' />
 					<div className='summary-section'>

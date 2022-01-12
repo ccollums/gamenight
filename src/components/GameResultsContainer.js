@@ -7,7 +7,7 @@ const GameResultsContainer = ({ gamesPlayed }) => {
 
   return (
     <React.Fragment>
-      {!gamesPlayed.length ? <p className="empty-games-msg">Log a game and a winner at right!</p> :
+      {!gamesPlayed.length ? <p className="empty-games-msg">Log a game and a winner!</p> :
         <section className="game-results-container">
           {displayGamesPlayed}
         </section>}
